@@ -1,0 +1,17 @@
+﻿[
+    {
+        "file":  "version.dll",
+        "sha256":  "7D30A50684BF0FF1AF3170920C0B9F633BDFA3550ECE2D2B7A22342BC4BFB84C",
+        "rollback":  "PASS"
+    },
+    {
+        "file":  "wiz8hy.dll",
+        "sha256":  "30191F29A1AAB4DF0137C578D3EFE9CEC3600D94095D8BF6E6967F1717ABED08",
+        "rollback":  "PASS"
+    },
+    {
+        "file":  "wiz8hy_hooks.txt",
+        "sha256":  "8E8D0CEB6FA6405E432F739DCB4C6E6CCB8B0605E4579F3FAB107ACA0EA0B4AB",
+        "rollback":  "PASS"
+    }
+]

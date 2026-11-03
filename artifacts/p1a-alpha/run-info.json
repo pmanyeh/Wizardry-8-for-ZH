@@ -1,0 +1,9 @@
+﻿{
+    "phase":  "alpha",
+    "process_id":  45912,
+    "game_directory":  "D:\\git\\Wizardry 8 for zh\\local\\wiz8-ws\\games\\work",
+    "capture_directory":  "D:\\git\\Wizardry 8 for zh\\artifacts\\p1a-alpha",
+    "source_revision":  "ca63d4447a973815670fbf6e146110e5d46989f5",
+    "hybrid_sha256":  "357F2E0F8F60A5BC070FCF5C3A7F0931673B846409FDFDE0FA8FF2851842E10D",
+    "hooks_sha256":  "205FABA600C022E6B9AE038E523FD259B92F41D4872B327B155AAF5FA9065EED"
+}

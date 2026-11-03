@@ -1,0 +1,13 @@
+﻿{
+    "plan":  "v2.2",
+    "plan_sha256":  "E742C5623DA266EC0CA165F512249647F8A85B1DD74A7A6C6C19E678FA32FA09",
+    "parent_revision":  "7a0757a0ea9a0b03693a48a805485c892e07def0",
+    "decomp_revision":  "ca63d4447a973815670fbf6e146110e5d46989f5",
+    "minhook_revision":  "8af6b4acae5a9388fd742b56fa79ece89d96f823",
+    "build_workspace":  "C:\\dev\\wiz8-ws",
+    "source_game":  "D:\\SteamLibrary\\steamapps\\common\\Wizardry8",
+    "retail_exe_sha256":  "18A74FF61C65B8A2D4CFA11FFCE82AD7FEF022A94EAF0C2F217E479E981420D2",
+    "phase":  "P-1",
+    "status":  "PASS",
+    "runtime_evidence":  "N/A - architecture phase"
+}

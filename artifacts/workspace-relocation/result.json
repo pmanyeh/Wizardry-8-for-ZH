@@ -1,0 +1,35 @@
+﻿{
+    "status":  "PASS",
+    "physical_workspace":  "D:\\git\\Wizardry 8 for zh\\local\\wiz8-ws",
+    "compatibility_junction":  "C:\\dev\\wiz8-ws",
+    "retained_backup":  "C:\\dev\\wiz8-ws.relocation-backup",
+    "copy_sha256_verified_files":  23736,
+    "copy_verified_bytes":  7875211233,
+    "critical_files":  [
+                           {
+                               "path":  "build/version.dll",
+                               "sha256":  "7d30a50684bf0ff1af3170920c0b9f633bdfa3550ece2d2b7a22342bc4bfb84c",
+                               "verified":  true
+                           },
+                           {
+                               "path":  "build/hybrid/wiz8hy.dll",
+                               "sha256":  "684f12377e9eedb898f0d5e5e9dca9cc1e291674160a8f62d652a06d34416d7a",
+                               "verified":  true
+                           },
+                           {
+                               "path":  "build/hybrid/wiz8hy_hooks.txt",
+                               "sha256":  "f937e6b2013d4208022a3625147e2c65b81e258f3c1a439a2b6cf80101273132",
+                               "verified":  true
+                           },
+                           {
+                               "path":  "decomp/src/wiz8/engine_code/Video2.cpp",
+                               "sha256":  "0eab871cfaa38c1aede7a83f3d1024aa8e1d8351df736225be16d8b23f85c5d1",
+                               "verified":  true
+                           }
+                       ],
+    "git_submodules":  "PASS",
+    "loader_build_smoke":  "PASS",
+    "cmake_cache_read":  "PASS",
+    "poc_phase":  "P0-B runtime verification still pending",
+    "cleanup_note":  "Automatic approval review blocked deletion of the old physical copy; retained it as a rollback backup instead."
+}

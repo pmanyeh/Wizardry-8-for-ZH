@@ -1,0 +1,12 @@
+11:35:26.724 [25020] Wizardry 8 Widescreen 1.0.2 (wiz8ws, loaded as version.dll proxy)
+11:35:26.725 [25020] game dir: C:\dev\wiz8-ws\games\work\
+11:35:26.725 [25020] real version.dll: loaded
+11:35:26.729 [25020] exe: C:\dev\wiz8-ws\games\work\Wiz8.exe
+11:35:26.729 [25020] exe sha256: 18A74FF61C65B8A2D4CFA11FFCE82AD7FEF022A94EAF0C2F217E479E981420D2 -> GOG 1.2.4
+11:35:26.729 [25020] config: Enabled=1 LogWindowCalls=0
+11:35:26.730 [25020] hooks installed: yes
+11:35:26.730 [25020] game signature: GOG 1.2.4 OK; dpiAware=1 borderless(modePatch=0 videoFullScreen=0 bink=0) mouse=0 altTab=0 hudLayout=Stretch
+11:35:26.730 [25020] phase4: hud=0 view3dClear=0 horPlus=0 (ini 1) pick=0 thumbs=0
+11:35:26.730 [25020] hybrid: WinMain hook installed, wiz8hy.dll: 289 functions replaced (-1 = not loaded)
+11:35:26.730 [25020] file names: system code page 950, nothing to do
+11:35:26.730 [25020] diagnostics: off ([Debug] Diagnostics=0)

@@ -1,0 +1,25 @@
+ini: D:\git\Wizardry 8 for zh\local\wiz8-ws\games\work\wiz8wide.ini
+output 1920x1080 (3DVideo.CFG), aspect 1.778
+[Canvas] Width=auto -> W=856, ox=108, grid 107x60; HorPlus=1; MouseScale=1
+[Display] Mode=window: framed window, 1920x1080
+[Display] SingleTexture2D=1 (2D layer as one texture, no tile seams)
+[Display] MaxFps=60 (frame rate capped)
+[Display] ViewDistance=1.50 (render far clip = level far clip x k; gameplay distances unchanged)
+[Display] SingleTexture2D: 856x480 layer -> one texture 1024x1024 (renderer max 2048x2048)
+text: Cyrillic=auto, Data\Fonts\Wiz_Text_Font.sti glyphs=154 -> English
+[ZH-TW] enabled: physical-resolution text proof
+[ZH-TW] GDI text surface initialized: physical 1920x1080, 24/32/48 px
+[WideArt] Data\Options\intro_bg_text_856.sti: loaded 856x480
+[ZH-TW] lossless readback completed
+[Experimental] options_buttons.sti CRC32 61b4571e: 5 buttons (English)
+[WideArt] Data\Wide\Stretch\S0F7_0_0_856.sti: loaded 856x480
+[WideArt] Data\Wide\Stretch\S0F9_0_3_856.sti: loaded 856x480
+[WideArt] Data\Wide\Stretch\S0F9_0_4_856.sti: loaded 856x480
+[WideArt] Data\Wide\Stretch\S0F3_0_0_856.sti: loaded 856x480
+[WideArt] Data\Level Load\LowerMonastery_856.sti: loaded 856x480
+[WideArt] Data\Wide\Stretch\S085_0_0_856.sti: loaded 856x480
+[WideArt] Data\Wide\Stretch\S087_0_0_856.sti: loaded 856x480
+[WideArt] Data\Wide\Stretch\S07E_0_6_856.sti: loaded 856x480
+[ZH-TW] lossless readback completed
+[WideArt] Data\Wide\Stretch\S0F9_0_1_856.sti: loaded 856x480
+[WideArt] Data\Wide\Stretch\S0F9_0_0_856.sti: loaded 856x480

@@ -1,0 +1,346 @@
+diff --git a/include/wiz8/engine_code/Video2.h b/include/wiz8/engine_code/Video2.h
+index 096fab8..b791b0a 100644
+--- a/include/wiz8/engine_code/Video2.h
++++ b/include/wiz8/engine_code/Video2.h
+@@ -289,6 +289,7 @@ void ResetTransientRenderScenes(void);
+ void ClearVideoDirtyBlocks(void); /* 0x00423150 */
+ void RenderScene(srScene* scene, srCamera* camera, const int* viewport, bool preserve_fog);
+ void RenderFrame(void);
++int SurfaceTileExtent(int width, int height);
+ IDirectDrawSurface2* BeginVideoPresentation(void);
+ unsigned char FinishVideoPresentation(void);
+ void PublishLightDirection(const EnvironmentColour* direction);
+diff --git a/include/wiz8/zh_text/HiResTextLayer.h b/include/wiz8/zh_text/HiResTextLayer.h
+new file mode 100644
+index 0000000..99b8c6e
+--- /dev/null
++++ b/include/wiz8/zh_text/HiResTextLayer.h
+@@ -0,0 +1,8 @@
++#pragma once
++
++class srGERD;
++
++// Local ZH-TW module. No changes to retail object layouts.
++void HiResTextDrawFrame(srGERD* renderer);
++void HiResTextReadback(srGERD* renderer);
++void HiResTextShutdown();
+diff --git a/src/wiz8/engine_code/Video2.cpp b/src/wiz8/engine_code/Video2.cpp
+index 7286bd8..472f04d 100644
+--- a/src/wiz8/engine_code/Video2.cpp
++++ b/src/wiz8/engine_code/Video2.cpp
+@@ -3,6 +3,7 @@
+ #include "wiz8/experimental.h"
+ #include "wiz8/w8diff_port.h"
+ #include "wiz8/wide_art.h"
++#include "wiz8/zh_text/HiResTextLayer.h"
+ #ifdef WIZ8_RUNTIME_TESTS
+ #include "runtime_instrumentation.h"
+ #endif
+@@ -654,6 +655,7 @@ void ShutdownVideoManager(void)
+ // FUNCTION: WIZ8 0x00423f30
+ void ShutdownVideoScenes(void)
+ {
++    HiResTextShutdown();
+     if (g_modeler) {
+         delete g_modeler;
+         g_modeler = 0;
+@@ -1587,7 +1589,9 @@ void RenderFrame(void)
+                 RenderScene(g_cursor_scene, g_overlay_camera, 0, false);
+             }
+         }
++    HiResTextDrawFrame(g_gerd);
+     g_gerd->endFrame();
++    HiResTextReadback(g_gerd);
+ #ifdef WIZ8_RUNTIME_TESTS
+     RuntimeObserve(RUNTIME_FRAME_SUBMITTED, g_fps_frame_count, g_current_screen_state.id, 0);
+ #endif
+diff --git a/src/wiz8/imports/sr.def b/src/wiz8/imports/sr.def
+index d114beb..1492585 100644
+--- a/src/wiz8/imports/sr.def
++++ b/src/wiz8/imports/sr.def
+@@ -10,6 +10,12 @@ LIBRARY SR
+ ; original imports the variadic one; only a hand-built long-form import
+ ; object could close that, not a .def.
+ EXPORTS
++    ; ZH-TW overlay consumer APIs, verified against retail SR.DLL exports.
++    ?getClearColor@srGERD@@QBEXAAV?$srVector4T@M@@@Z
++    ?getMatrixMode@srGERD@@QBE?AW4e_matrixMode@1@XZ
++    ?getShader@srGERD@@QBE?AVsrShader@@XZ
++    ?getTextureInfo@srGERD@@QAEHPAVsrTextureIFace@@AAUTextureInfo@1@@Z
++    ?setClearColor@srGERD@@QAEXABV?$srVector4T@M@@@Z
+     ?closeWindow@srGERD@@QAEXW4e_closeHint@1@@Z
+     ?setFogColor@srScene@@QAEXABV?$srVector3T@M@@@Z
+     ?vp@srVectorProcessor@@0PAVsrVP@@A
+diff --git a/src/wiz8/sources.cmake b/src/wiz8/sources.cmake
+index bf02e6c..fe84ab9 100644
+--- a/src/wiz8/sources.cmake
++++ b/src/wiz8/sources.cmake
+@@ -3,6 +3,7 @@
+ # Compiler identities live in reccmp metadata; templates own their vtable annotations.
+ # Their original translation-unit ownership is not established.
+ set(WIZ8_SOURCE_UNITS
++    src/wiz8/zh_text/HiResTextLayer.cpp
+     "src/wiz8/local_code/PC Item.cpp"
+     src/wiz8/local_code/FormationAndFacing.cpp
+     src/wiz8/local_code/ThingEditorShared.cpp
+diff --git a/src/wiz8/zh_text/HiResTextLayer.cpp b/src/wiz8/zh_text/HiResTextLayer.cpp
+new file mode 100644
+index 0000000..44cadc6
+--- /dev/null
++++ b/src/wiz8/zh_text/HiResTextLayer.cpp
+@@ -0,0 +1,255 @@
++#include "wiz8/zh_text/HiResTextLayer.h"
++
++#include "wiz8/canvas.h"
++#include "wiz8/engine_code/Video2.h"
++#include "wiz8/surface2d.h"
++#include "surrender/srColorSurface.h"
++#include "surrender/srGERD.h"
++#include "surrender/srShader.h"
++#include <windows.h>
++#include <stdlib.h>
++#include <string.h>
++
++namespace {
++
++// POD only: Hybrid intentionally removes dynamic global initialization.
++struct TextLayerState {
++    int config_read;
++    int enabled;
++    int failed;
++    int width;
++    int height;
++    unsigned long* pixels;
++    srColorSurface* surface;
++    stSurface2D* layer;
++};
++
++static TextLayerState g_text;
++
++bool WriteBytes(const char* path, const void* bytes, unsigned long count)
++{
++    HANDLE file = CreateFileA(path, GENERIC_WRITE, FILE_SHARE_READ, 0, CREATE_ALWAYS,
++                              FILE_ATTRIBUTE_NORMAL, 0);
++    if (file == INVALID_HANDLE_VALUE) {
++        return false;
++    }
++    DWORD written = 0;
++    bool ok = WriteFile(file, bytes, count, &written, 0) != 0 && written == count;
++    CloseHandle(file);
++    return ok;
++}
++
++void ReadConfig()
++{
++    if (!g_text.config_read) {
++        char path[MAX_PATH];
++        PathNextToExe("wiz8zhtw.ini", path, sizeof(path));
++        g_text.enabled = GetPrivateProfileIntA("ZH-TW", "Enabled", 0, path) != 0;
++        g_text.config_read = 1;
++        CanvasLogLine(g_text.enabled ? "[ZH-TW] enabled: alpha proof" :
++                                      "[ZH-TW] disabled: no overlay resources");
++    }
++}
++
++void FillRect(int left, int top, int right, int bottom, unsigned long pixel)
++{
++    for (int y = top; y < bottom; ++y) {
++        for (int x = left; x < right; ++x) {
++            g_text.pixels[y * g_text.width + x] = pixel;
++        }
++    }
++}
++
++bool Initialize(srGERD* renderer)
++{
++    g_text.width = renderer->getWidth();
++    g_text.height = renderer->getHeight();
++    if (g_text.width != 1920 || g_text.height != 1080) {
++        CanvasLogLine("[ZH-TW] blocked: formal proof requires 1920x1080");
++        return false;
++    }
++    g_text.pixels = static_cast<unsigned long*>(calloc(g_text.width * g_text.height, 4));
++    if (g_text.pixels == 0) {
++        return false;
++    }
++    // Straight alpha; RGB is deliberately identical for every alpha value.
++    const unsigned long rgb = (220UL << 16) | (180UL << 8) | 80UL;
++    const int alpha[5] = {0, 64, 128, 192, 255};
++    for (int index = 0; index < 5; ++index) {
++        FillRect(48 + index * 152, 48, 176 + index * 152, 128,
++                 rgb | (static_cast<unsigned long>(alpha[index]) << 24));
++    }
++    for (int value = 0; value < 256; ++value) {
++        FillRect(48 + value * 3, 160, 51 + value * 3, 208,
++                 rgb | (static_cast<unsigned long>(value) << 24));
++    }
++    g_text.surface = new srColorSurface(srPixelConvert::SURFACE_BGRA32, g_text.pixels,
++                                        g_text.width, g_text.height, g_text.width * 4);
++    if (g_text.surface == 0) {
++        return false;
++    }
++    g_text.layer = new stSurface2D(g_text.surface, g_text.width, g_text.height, 0,
++                                   SurfaceTileExtent(g_text.width, g_text.height));
++    if (g_text.layer == 0) {
++        return false;
++    }
++    g_text.layer->shader_bits = srShader::PASS_ALWAYS | srShader::MASK_COLOR_WRITE |
++        (srShader::DSTBLEND_ONE_MINUS_SRC_ALPHA << srShader::DSTBLEND_SHIFT) |
++        (srShader::SRCBLEND_SRC_ALPHA << srShader::SRCBLEND_SHIFT) |
++        srShader::MASK_TEXTURING;
++    for (int index = 0; index < g_text.layer->tile_count; ++index) {
++        stTexture2D* tile = g_text.layer->tiles[index];
++        tile->disableHint(srTextureIFace::HINT_NO_ALPHA);
++        tile->disableHint(srTextureIFace::HINT_ONE_BIT_ALPHA);
++        tile->enableHint(srTextureIFace::HINT_NO_REDUCTION);
++        tile->setMagFilter(srTextureIFace::FILTER_NONE);
++        tile->setMinFilter(srTextureIFace::FILTER_NONE);
++        tile->invalidate();
++    }
++    CanvasLogLine("[ZH-TW] alpha surface initialized: 1920x1080 BGRA32 straight alpha");
++    return true;
++}
++
++void DescribeFormat(char* text, const char* label, const srPixelConvert::PixelFormat& format)
++{
++    wsprintfA(text, "%s_r_bits=%u\n%s_r_shift=%u\n%s_g_bits=%u\n%s_g_shift=%u\n"
++                   "%s_b_bits=%u\n%s_b_shift=%u\n%s_a_bits=%u\n%s_a_shift=%u\n",
++              label, format.red_bits, label, format.red_shift,
++              label, format.green_bits, label, format.green_shift,
++              label, format.blue_bits, label, format.blue_shift,
++              label, format.alpha_bits, label, format.alpha_shift);
++}
++
++} // namespace
++
++void HiResTextDrawFrame(srGERD* renderer)
++{
++    ReadConfig();
++    if (!g_text.enabled || g_text.failed || renderer == 0) {
++        return;
++    }
++    if (g_text.layer == 0 && !Initialize(renderer)) {
++        g_text.failed = 1;
++        CanvasLogLine("[ZH-TW] initialization failed; original renderer remains active");
++        return;
++    }
++
++    // Test background is cleared by the device, independently of the alpha texture.
++    srVector4T<float> saved_clear;
++    renderer->getClearColor(saved_clear);
++    renderer->setViewPort(32, 32, 800, 192);
++    renderer->setScissor(32, 32, 800, 192);
++    renderer->setClearColor(20.0f / 255.0f, 40.0f / 255.0f, 60.0f / 255.0f, 1.0f);
++    renderer->clear(srFlags<srGERD::e_buffer>(srGERD::BUFFER_COLOR));
++    renderer->setClearColor(saved_clear);
++    renderer->setViewPort(0, 0, g_text.width, g_text.height);
++    renderer->setScissor(0, 0, g_text.width, g_text.height);
++
++    srGERD::e_matrixMode old_mode = renderer->getMatrixMode();
++    srShader old_shader = renderer->getShader();
++    renderer->matrixMode(srGERD::MATRIX_MODELVIEW);
++    renderer->pushMatrix();
++    renderer->loadIdentity();
++    g_text.layer->DrawTiles(renderer);
++    renderer->flushRenderers();
++    renderer->matrixMode(srGERD::MATRIX_MODELVIEW);
++    renderer->popMatrix();
++    renderer->matrixMode(old_mode);
++    renderer->setShader(old_shader);
++}
++
++void HiResTextReadback(srGERD* renderer)
++{
++    char request[MAX_PATH];
++    PathNextToExe("zhtwshot.req", request, sizeof(request));
++    if (renderer == 0 || GetFileAttributesA(request) == INVALID_FILE_ATTRIBUTES) {
++        return;
++    }
++    char directory[MAX_PATH];
++    DWORD length = GetEnvironmentVariableA("WIZ8_ZHTW_CAPTURE_DIR", directory, sizeof(directory));
++    if (length == 0 || length >= sizeof(directory)) {
++        CanvasLogLine("[ZH-TW] capture requires WIZ8_ZHTW_CAPTURE_DIR");
++        DeleteFileA(request);
++        return;
++    }
++    CreateDirectoryA(directory, 0);
++    srColorSurfaceIFace* frame = renderer->lockBuffer();
++    if (frame == 0) {
++        CanvasLogLine("[ZH-TW] lockBuffer failed; capture not accepted");
++        DeleteFileA(request);
++        return;
++    }
++    int width = frame->getWidth();
++    int height = frame->getHeight();
++    unsigned long* row = static_cast<unsigned long*>(malloc(width * 4));
++    char path[MAX_PATH];
++    wsprintfA(path, "%s\\readback.bgra", directory);
++    HANDLE file = CreateFileA(path, GENERIC_WRITE, FILE_SHARE_READ, 0, CREATE_ALWAYS,
++                              FILE_ATTRIBUTE_NORMAL, 0);
++    bool ok = row != 0 && file != INVALID_HANDLE_VALUE;
++    if (ok) {
++        for (int y = 0; y < height; ++y) {
++            frame->getPixelRow(row, y, 0, width);
++            for (int x = 0; x < width; ++x) {
++                row[x] |= 0xff000000UL;
++            }
++            DWORD written = 0;
++            if (!WriteFile(file, row, width * 4, &written, 0) || written != width * 4) {
++                ok = false;
++                break;
++            }
++        }
++    }
++    if (file != INVALID_HANDLE_VALUE) {
++        CloseHandle(file);
++    }
++    free(row);
++    srPixelConvert::PixelFormat frame_format;
++    frame->getPixelFormat(frame_format);
++    renderer->unlockBuffer();
++
++    char metadata[4096];
++    wsprintfA(metadata, "phase=P1A\nenabled=%d\nrenderer_width=%lu\nrenderer_height=%lu\n"
++                        "readback_width=%d\nreadback_height=%d\noverlay_width=%d\noverlay_height=%d\n"
++                        "alpha_contract=straight\nforeground_rgb=220,180,80\nbackground_rgb=20,40,60\n"
++                        "normalized_readback=BGRA32_opaque\nreadback_ok=%d\n",
++              g_text.enabled, renderer->getWidth(), renderer->getHeight(), width, height,
++              g_text.width, g_text.height, ok ? 1 : 0);
++    char line[512];
++    DescribeFormat(line, "readback_native", frame_format);
++    strcat(metadata, line);
++    if (g_text.layer != 0) {
++        srPixelConvert::PixelFormat source_format;
++        g_text.surface->getPixelFormat(source_format);
++        DescribeFormat(line, "source", source_format);
++        strcat(metadata, line);
++        srGERD::TextureInfo texture;
++        memset(&texture, 0, sizeof(texture));
++        int texture_result = renderer->getTextureInfo(g_text.layer->tiles[0], texture);
++        wsprintfA(line, "texture_query_result=%d\ntexture_width=%lu\ntexture_height=%lu\n"
++                        "tile_count=%d\nshader_bits=0x%08lx\n",
++                  texture_result, texture.width, texture.height, g_text.layer->tile_count,
++                  g_text.layer->shader_bits);
++        strcat(metadata, line);
++        DescribeFormat(line, "texture", texture.pixel_format);
++        strcat(metadata, line);
++        wsprintfA(path, "%s\\source.bgra", directory);
++        ok = WriteBytes(path, g_text.pixels, g_text.width * g_text.height * 4) && ok;
++    }
++    wsprintfA(path, "%s\\render-info.txt", directory);
++    ok = WriteBytes(path, metadata, static_cast<unsigned long>(strlen(metadata))) && ok;
++    CanvasLogLine(ok ? "[ZH-TW] lossless readback completed" : "[ZH-TW] readback write failed");
++    DeleteFileA(request);
++}
++
++void HiResTextShutdown()
++{
++    if (g_text.layer != 0) {
++        g_text.layer->release();
++    }
++    if (g_text.surface != 0) {
++        g_text.surface->release();
++    }
++    free(g_text.pixels);
++    memset(&g_text, 0, sizeof(g_text));
++}

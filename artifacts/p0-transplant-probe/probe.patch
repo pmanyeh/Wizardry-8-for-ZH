@@ -1,0 +1,24 @@
+diff --git a/src/wiz8/engine_code/Video2.cpp b/src/wiz8/engine_code/Video2.cpp
+index 7286bd8..4000890 100644
+--- a/src/wiz8/engine_code/Video2.cpp
++++ b/src/wiz8/engine_code/Video2.cpp
+@@ -1437,6 +1437,19 @@ void RenderFrame(void)
+         return;
+     }
+ 
++    /* ZH-TW P0-B: execution marker only; no rendering changes. */
++    static int zhtw_probe_logged;
++    if (!zhtw_probe_logged) {
++        char probe[160];
++        _snprintf(probe, sizeof(probe),
++                  "[ZH-TW P0-B] RenderFrame active renderer=%lux%lu",
++                  static_cast<unsigned long>(g_gerd->getWidth()),
++                  static_cast<unsigned long>(g_gerd->getHeight()));
++        probe[sizeof(probe) - 1] = '\0';
++        CanvasLogLine(probe);
++        zhtw_probe_logged = 1;
++    }
++
+     if (g_trigger_action_active && GetWorld() != 0) {
+         GetCameraPosition(&saved_world_position);
+         shifted_world_position = saved_world_position + g_trigger_action_scene_offset;

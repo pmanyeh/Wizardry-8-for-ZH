@@ -1,0 +1,13 @@
+ini: D:\git\Wizardry 8 for zh\local\wiz8-ws\games\work\wiz8wide.ini
+output 1920x1080 (3DVideo.CFG), aspect 1.778
+[Canvas] Width=auto -> W=856, ox=108, grid 107x60; HorPlus=1; MouseScale=1
+[Display] Mode=window: framed window, 1920x1080
+[Display] SingleTexture2D=1 (2D layer as one texture, no tile seams)
+[Display] MaxFps=60 (frame rate capped)
+[Display] ViewDistance=1.50 (render far clip = level far clip x k; gameplay distances unchanged)
+[Display] SingleTexture2D: 856x480 layer -> one texture 1024x1024 (renderer max 2048x2048)
+text: Cyrillic=auto, Data\Fonts\Wiz_Text_Font.sti glyphs=154 -> English
+[ZH-TW] enabled: alpha proof
+[ZH-TW] alpha surface initialized: 1920x1080 BGRA32 straight alpha
+[WideArt] Data\Options\intro_bg_text_856.sti: loaded 856x480
+[ZH-TW] lossless readback completed

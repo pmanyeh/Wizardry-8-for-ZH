@@ -1,0 +1,10 @@
+local/
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.map
+*.SLF
+*.slf
+__pycache__/

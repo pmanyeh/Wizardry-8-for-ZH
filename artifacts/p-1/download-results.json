@@ -1,0 +1,20 @@
+[
+  {
+    "path": "C:\\dev\\wiz8-ws\\release\\Wiz8Widescreen-1.0.2.zip",
+    "sha256": "819897f226de9f5f53d2790ff400f89612d190eda3e8d01ccb72c3ed429d55a1",
+    "bytes": 35668226,
+    "status": "verified"
+  },
+  {
+    "path": "C:\\dev\\wiz8-ws\\Tools\\downloads\\llvm-mingw-20261020-ucrt-x86_64.zip",
+    "sha256": "fd5462b7f5d93b2ff981fcd3f9c7e427e47f3203c64ea91c27bcc444eebd74cd",
+    "bytes": 190612575,
+    "status": "verified"
+  },
+  {
+    "path": "C:\\dev\\wiz8-ws\\Tools\\downloads\\PowerShell-7.6.9-win-x64.zip",
+    "sha256": "ce7484804c0f0ad4dda10c958e71acdaf7eebfb22505c1b480f89e0e9f1da94d",
+    "bytes": 109620855,
+    "status": "verified"
+  }
+]

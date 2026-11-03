@@ -1,0 +1,5515 @@
+{
+  "status": "PASS",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "alpha_contract": "straight",
+  "texture_alpha_bits": 8,
+  "per_channel_error_limits": [
+    4,
+    4,
+    4
+  ],
+  "background_expected": [
+    20,
+    40,
+    60
+  ],
+  "background_actual": [
+    20,
+    40,
+    60
+  ],
+  "blocks": [
+    {
+      "x": 112,
+      "y": 88,
+      "source_alpha": 0,
+      "expected_rgb": [
+        20,
+        40,
+        60
+      ],
+      "actual_rgb": [
+        20,
+        40,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 264,
+      "y": 88,
+      "source_alpha": 64,
+      "expected_rgb": [
+        70,
+        75,
+        65
+      ],
+      "actual_rgb": [
+        70,
+        75,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 416,
+      "y": 88,
+      "source_alpha": 128,
+      "expected_rgb": [
+        120,
+        110,
+        70
+      ],
+      "actual_rgb": [
+        120,
+        110,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 568,
+      "y": 88,
+      "source_alpha": 192,
+      "expected_rgb": [
+        171,
+        145,
+        75
+      ],
+      "actual_rgb": [
+        171,
+        145,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 720,
+      "y": 88,
+      "source_alpha": 255,
+      "expected_rgb": [
+        220,
+        180,
+        80
+      ],
+      "actual_rgb": [
+        220,
+        180,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    }
+  ],
+  "ramp_unique_rgb": 241,
+  "ramp_max_error": [
+    0,
+    0,
+    0
+  ],
+  "ramp": [
+    {
+      "x": 49,
+      "y": 184,
+      "source_alpha": 0,
+      "expected_rgb": [
+        20,
+        40,
+        60
+      ],
+      "actual_rgb": [
+        20,
+        40,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 52,
+      "y": 184,
+      "source_alpha": 1,
+      "expected_rgb": [
+        21,
+        41,
+        60
+      ],
+      "actual_rgb": [
+        21,
+        41,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 55,
+      "y": 184,
+      "source_alpha": 2,
+      "expected_rgb": [
+        22,
+        41,
+        60
+      ],
+      "actual_rgb": [
+        22,
+        41,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 58,
+      "y": 184,
+      "source_alpha": 3,
+      "expected_rgb": [
+        22,
+        42,
+        60
+      ],
+      "actual_rgb": [
+        22,
+        42,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 61,
+      "y": 184,
+      "source_alpha": 4,
+      "expected_rgb": [
+        23,
+        42,
+        60
+      ],
+      "actual_rgb": [
+        23,
+        42,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 64,
+      "y": 184,
+      "source_alpha": 5,
+      "expected_rgb": [
+        24,
+        43,
+        60
+      ],
+      "actual_rgb": [
+        24,
+        43,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 67,
+      "y": 184,
+      "source_alpha": 6,
+      "expected_rgb": [
+        25,
+        43,
+        60
+      ],
+      "actual_rgb": [
+        25,
+        43,
+        60
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 70,
+      "y": 184,
+      "source_alpha": 7,
+      "expected_rgb": [
+        25,
+        44,
+        61
+      ],
+      "actual_rgb": [
+        25,
+        44,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 73,
+      "y": 184,
+      "source_alpha": 8,
+      "expected_rgb": [
+        26,
+        44,
+        61
+      ],
+      "actual_rgb": [
+        26,
+        44,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 76,
+      "y": 184,
+      "source_alpha": 9,
+      "expected_rgb": [
+        27,
+        45,
+        61
+      ],
+      "actual_rgb": [
+        27,
+        45,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 79,
+      "y": 184,
+      "source_alpha": 10,
+      "expected_rgb": [
+        28,
+        45,
+        61
+      ],
+      "actual_rgb": [
+        28,
+        45,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 82,
+      "y": 184,
+      "source_alpha": 11,
+      "expected_rgb": [
+        29,
+        46,
+        61
+      ],
+      "actual_rgb": [
+        29,
+        46,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 85,
+      "y": 184,
+      "source_alpha": 12,
+      "expected_rgb": [
+        29,
+        47,
+        61
+      ],
+      "actual_rgb": [
+        29,
+        47,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 88,
+      "y": 184,
+      "source_alpha": 13,
+      "expected_rgb": [
+        30,
+        47,
+        61
+      ],
+      "actual_rgb": [
+        30,
+        47,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 91,
+      "y": 184,
+      "source_alpha": 14,
+      "expected_rgb": [
+        31,
+        48,
+        61
+      ],
+      "actual_rgb": [
+        31,
+        48,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 94,
+      "y": 184,
+      "source_alpha": 15,
+      "expected_rgb": [
+        32,
+        48,
+        61
+      ],
+      "actual_rgb": [
+        32,
+        48,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 97,
+      "y": 184,
+      "source_alpha": 16,
+      "expected_rgb": [
+        33,
+        49,
+        61
+      ],
+      "actual_rgb": [
+        33,
+        49,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 100,
+      "y": 184,
+      "source_alpha": 17,
+      "expected_rgb": [
+        33,
+        49,
+        61
+      ],
+      "actual_rgb": [
+        33,
+        49,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 103,
+      "y": 184,
+      "source_alpha": 18,
+      "expected_rgb": [
+        34,
+        50,
+        61
+      ],
+      "actual_rgb": [
+        34,
+        50,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 106,
+      "y": 184,
+      "source_alpha": 19,
+      "expected_rgb": [
+        35,
+        50,
+        61
+      ],
+      "actual_rgb": [
+        35,
+        50,
+        61
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 109,
+      "y": 184,
+      "source_alpha": 20,
+      "expected_rgb": [
+        36,
+        51,
+        62
+      ],
+      "actual_rgb": [
+        36,
+        51,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 112,
+      "y": 184,
+      "source_alpha": 21,
+      "expected_rgb": [
+        36,
+        52,
+        62
+      ],
+      "actual_rgb": [
+        36,
+        52,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 115,
+      "y": 184,
+      "source_alpha": 22,
+      "expected_rgb": [
+        37,
+        52,
+        62
+      ],
+      "actual_rgb": [
+        37,
+        52,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 118,
+      "y": 184,
+      "source_alpha": 23,
+      "expected_rgb": [
+        38,
+        53,
+        62
+      ],
+      "actual_rgb": [
+        38,
+        53,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 121,
+      "y": 184,
+      "source_alpha": 24,
+      "expected_rgb": [
+        39,
+        53,
+        62
+      ],
+      "actual_rgb": [
+        39,
+        53,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 124,
+      "y": 184,
+      "source_alpha": 25,
+      "expected_rgb": [
+        40,
+        54,
+        62
+      ],
+      "actual_rgb": [
+        40,
+        54,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 127,
+      "y": 184,
+      "source_alpha": 26,
+      "expected_rgb": [
+        40,
+        54,
+        62
+      ],
+      "actual_rgb": [
+        40,
+        54,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 130,
+      "y": 184,
+      "source_alpha": 27,
+      "expected_rgb": [
+        41,
+        55,
+        62
+      ],
+      "actual_rgb": [
+        41,
+        55,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 133,
+      "y": 184,
+      "source_alpha": 28,
+      "expected_rgb": [
+        42,
+        55,
+        62
+      ],
+      "actual_rgb": [
+        42,
+        55,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 136,
+      "y": 184,
+      "source_alpha": 29,
+      "expected_rgb": [
+        43,
+        56,
+        62
+      ],
+      "actual_rgb": [
+        43,
+        56,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 139,
+      "y": 184,
+      "source_alpha": 30,
+      "expected_rgb": [
+        44,
+        56,
+        62
+      ],
+      "actual_rgb": [
+        44,
+        56,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 142,
+      "y": 184,
+      "source_alpha": 31,
+      "expected_rgb": [
+        44,
+        57,
+        62
+      ],
+      "actual_rgb": [
+        44,
+        57,
+        62
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 145,
+      "y": 184,
+      "source_alpha": 32,
+      "expected_rgb": [
+        45,
+        58,
+        63
+      ],
+      "actual_rgb": [
+        45,
+        58,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 148,
+      "y": 184,
+      "source_alpha": 33,
+      "expected_rgb": [
+        46,
+        58,
+        63
+      ],
+      "actual_rgb": [
+        46,
+        58,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 151,
+      "y": 184,
+      "source_alpha": 34,
+      "expected_rgb": [
+        47,
+        59,
+        63
+      ],
+      "actual_rgb": [
+        47,
+        59,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 154,
+      "y": 184,
+      "source_alpha": 35,
+      "expected_rgb": [
+        47,
+        59,
+        63
+      ],
+      "actual_rgb": [
+        47,
+        59,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 157,
+      "y": 184,
+      "source_alpha": 36,
+      "expected_rgb": [
+        48,
+        60,
+        63
+      ],
+      "actual_rgb": [
+        48,
+        60,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 160,
+      "y": 184,
+      "source_alpha": 37,
+      "expected_rgb": [
+        49,
+        60,
+        63
+      ],
+      "actual_rgb": [
+        49,
+        60,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 163,
+      "y": 184,
+      "source_alpha": 38,
+      "expected_rgb": [
+        50,
+        61,
+        63
+      ],
+      "actual_rgb": [
+        50,
+        61,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 166,
+      "y": 184,
+      "source_alpha": 39,
+      "expected_rgb": [
+        51,
+        61,
+        63
+      ],
+      "actual_rgb": [
+        51,
+        61,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 169,
+      "y": 184,
+      "source_alpha": 40,
+      "expected_rgb": [
+        51,
+        62,
+        63
+      ],
+      "actual_rgb": [
+        51,
+        62,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 172,
+      "y": 184,
+      "source_alpha": 41,
+      "expected_rgb": [
+        52,
+        63,
+        63
+      ],
+      "actual_rgb": [
+        52,
+        63,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 175,
+      "y": 184,
+      "source_alpha": 42,
+      "expected_rgb": [
+        53,
+        63,
+        63
+      ],
+      "actual_rgb": [
+        53,
+        63,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 178,
+      "y": 184,
+      "source_alpha": 43,
+      "expected_rgb": [
+        54,
+        64,
+        63
+      ],
+      "actual_rgb": [
+        54,
+        64,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 181,
+      "y": 184,
+      "source_alpha": 44,
+      "expected_rgb": [
+        55,
+        64,
+        63
+      ],
+      "actual_rgb": [
+        55,
+        64,
+        63
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 184,
+      "y": 184,
+      "source_alpha": 45,
+      "expected_rgb": [
+        55,
+        65,
+        64
+      ],
+      "actual_rgb": [
+        55,
+        65,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 187,
+      "y": 184,
+      "source_alpha": 46,
+      "expected_rgb": [
+        56,
+        65,
+        64
+      ],
+      "actual_rgb": [
+        56,
+        65,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 190,
+      "y": 184,
+      "source_alpha": 47,
+      "expected_rgb": [
+        57,
+        66,
+        64
+      ],
+      "actual_rgb": [
+        57,
+        66,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 193,
+      "y": 184,
+      "source_alpha": 48,
+      "expected_rgb": [
+        58,
+        66,
+        64
+      ],
+      "actual_rgb": [
+        58,
+        66,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 196,
+      "y": 184,
+      "source_alpha": 49,
+      "expected_rgb": [
+        58,
+        67,
+        64
+      ],
+      "actual_rgb": [
+        58,
+        67,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 199,
+      "y": 184,
+      "source_alpha": 50,
+      "expected_rgb": [
+        59,
+        67,
+        64
+      ],
+      "actual_rgb": [
+        59,
+        67,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 202,
+      "y": 184,
+      "source_alpha": 51,
+      "expected_rgb": [
+        60,
+        68,
+        64
+      ],
+      "actual_rgb": [
+        60,
+        68,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 205,
+      "y": 184,
+      "source_alpha": 52,
+      "expected_rgb": [
+        61,
+        69,
+        64
+      ],
+      "actual_rgb": [
+        61,
+        69,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 208,
+      "y": 184,
+      "source_alpha": 53,
+      "expected_rgb": [
+        62,
+        69,
+        64
+      ],
+      "actual_rgb": [
+        62,
+        69,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 211,
+      "y": 184,
+      "source_alpha": 54,
+      "expected_rgb": [
+        62,
+        70,
+        64
+      ],
+      "actual_rgb": [
+        62,
+        70,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 214,
+      "y": 184,
+      "source_alpha": 55,
+      "expected_rgb": [
+        63,
+        70,
+        64
+      ],
+      "actual_rgb": [
+        63,
+        70,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 217,
+      "y": 184,
+      "source_alpha": 56,
+      "expected_rgb": [
+        64,
+        71,
+        64
+      ],
+      "actual_rgb": [
+        64,
+        71,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 220,
+      "y": 184,
+      "source_alpha": 57,
+      "expected_rgb": [
+        65,
+        71,
+        64
+      ],
+      "actual_rgb": [
+        65,
+        71,
+        64
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 223,
+      "y": 184,
+      "source_alpha": 58,
+      "expected_rgb": [
+        65,
+        72,
+        65
+      ],
+      "actual_rgb": [
+        65,
+        72,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 226,
+      "y": 184,
+      "source_alpha": 59,
+      "expected_rgb": [
+        66,
+        72,
+        65
+      ],
+      "actual_rgb": [
+        66,
+        72,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 229,
+      "y": 184,
+      "source_alpha": 60,
+      "expected_rgb": [
+        67,
+        73,
+        65
+      ],
+      "actual_rgb": [
+        67,
+        73,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 232,
+      "y": 184,
+      "source_alpha": 61,
+      "expected_rgb": [
+        68,
+        73,
+        65
+      ],
+      "actual_rgb": [
+        68,
+        73,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 235,
+      "y": 184,
+      "source_alpha": 62,
+      "expected_rgb": [
+        69,
+        74,
+        65
+      ],
+      "actual_rgb": [
+        69,
+        74,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 238,
+      "y": 184,
+      "source_alpha": 63,
+      "expected_rgb": [
+        69,
+        75,
+        65
+      ],
+      "actual_rgb": [
+        69,
+        75,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 241,
+      "y": 184,
+      "source_alpha": 64,
+      "expected_rgb": [
+        70,
+        75,
+        65
+      ],
+      "actual_rgb": [
+        70,
+        75,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 244,
+      "y": 184,
+      "source_alpha": 65,
+      "expected_rgb": [
+        71,
+        76,
+        65
+      ],
+      "actual_rgb": [
+        71,
+        76,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 247,
+      "y": 184,
+      "source_alpha": 66,
+      "expected_rgb": [
+        72,
+        76,
+        65
+      ],
+      "actual_rgb": [
+        72,
+        76,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 250,
+      "y": 184,
+      "source_alpha": 67,
+      "expected_rgb": [
+        73,
+        77,
+        65
+      ],
+      "actual_rgb": [
+        73,
+        77,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 253,
+      "y": 184,
+      "source_alpha": 68,
+      "expected_rgb": [
+        73,
+        77,
+        65
+      ],
+      "actual_rgb": [
+        73,
+        77,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 256,
+      "y": 184,
+      "source_alpha": 69,
+      "expected_rgb": [
+        74,
+        78,
+        65
+      ],
+      "actual_rgb": [
+        74,
+        78,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 259,
+      "y": 184,
+      "source_alpha": 70,
+      "expected_rgb": [
+        75,
+        78,
+        65
+      ],
+      "actual_rgb": [
+        75,
+        78,
+        65
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 262,
+      "y": 184,
+      "source_alpha": 71,
+      "expected_rgb": [
+        76,
+        79,
+        66
+      ],
+      "actual_rgb": [
+        76,
+        79,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 265,
+      "y": 184,
+      "source_alpha": 72,
+      "expected_rgb": [
+        76,
+        80,
+        66
+      ],
+      "actual_rgb": [
+        76,
+        80,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 268,
+      "y": 184,
+      "source_alpha": 73,
+      "expected_rgb": [
+        77,
+        80,
+        66
+      ],
+      "actual_rgb": [
+        77,
+        80,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 271,
+      "y": 184,
+      "source_alpha": 74,
+      "expected_rgb": [
+        78,
+        81,
+        66
+      ],
+      "actual_rgb": [
+        78,
+        81,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 274,
+      "y": 184,
+      "source_alpha": 75,
+      "expected_rgb": [
+        79,
+        81,
+        66
+      ],
+      "actual_rgb": [
+        79,
+        81,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 277,
+      "y": 184,
+      "source_alpha": 76,
+      "expected_rgb": [
+        80,
+        82,
+        66
+      ],
+      "actual_rgb": [
+        80,
+        82,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 280,
+      "y": 184,
+      "source_alpha": 77,
+      "expected_rgb": [
+        80,
+        82,
+        66
+      ],
+      "actual_rgb": [
+        80,
+        82,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 283,
+      "y": 184,
+      "source_alpha": 78,
+      "expected_rgb": [
+        81,
+        83,
+        66
+      ],
+      "actual_rgb": [
+        81,
+        83,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 286,
+      "y": 184,
+      "source_alpha": 79,
+      "expected_rgb": [
+        82,
+        83,
+        66
+      ],
+      "actual_rgb": [
+        82,
+        83,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 289,
+      "y": 184,
+      "source_alpha": 80,
+      "expected_rgb": [
+        83,
+        84,
+        66
+      ],
+      "actual_rgb": [
+        83,
+        84,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 292,
+      "y": 184,
+      "source_alpha": 81,
+      "expected_rgb": [
+        84,
+        84,
+        66
+      ],
+      "actual_rgb": [
+        84,
+        84,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 295,
+      "y": 184,
+      "source_alpha": 82,
+      "expected_rgb": [
+        84,
+        85,
+        66
+      ],
+      "actual_rgb": [
+        84,
+        85,
+        66
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 298,
+      "y": 184,
+      "source_alpha": 83,
+      "expected_rgb": [
+        85,
+        86,
+        67
+      ],
+      "actual_rgb": [
+        85,
+        86,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 301,
+      "y": 184,
+      "source_alpha": 84,
+      "expected_rgb": [
+        86,
+        86,
+        67
+      ],
+      "actual_rgb": [
+        86,
+        86,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 304,
+      "y": 184,
+      "source_alpha": 85,
+      "expected_rgb": [
+        87,
+        87,
+        67
+      ],
+      "actual_rgb": [
+        87,
+        87,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 307,
+      "y": 184,
+      "source_alpha": 86,
+      "expected_rgb": [
+        87,
+        87,
+        67
+      ],
+      "actual_rgb": [
+        87,
+        87,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 310,
+      "y": 184,
+      "source_alpha": 87,
+      "expected_rgb": [
+        88,
+        88,
+        67
+      ],
+      "actual_rgb": [
+        88,
+        88,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 313,
+      "y": 184,
+      "source_alpha": 88,
+      "expected_rgb": [
+        89,
+        88,
+        67
+      ],
+      "actual_rgb": [
+        89,
+        88,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 316,
+      "y": 184,
+      "source_alpha": 89,
+      "expected_rgb": [
+        90,
+        89,
+        67
+      ],
+      "actual_rgb": [
+        90,
+        89,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 319,
+      "y": 184,
+      "source_alpha": 90,
+      "expected_rgb": [
+        91,
+        89,
+        67
+      ],
+      "actual_rgb": [
+        91,
+        89,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 322,
+      "y": 184,
+      "source_alpha": 91,
+      "expected_rgb": [
+        91,
+        90,
+        67
+      ],
+      "actual_rgb": [
+        91,
+        90,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 325,
+      "y": 184,
+      "source_alpha": 92,
+      "expected_rgb": [
+        92,
+        91,
+        67
+      ],
+      "actual_rgb": [
+        92,
+        91,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 328,
+      "y": 184,
+      "source_alpha": 93,
+      "expected_rgb": [
+        93,
+        91,
+        67
+      ],
+      "actual_rgb": [
+        93,
+        91,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 331,
+      "y": 184,
+      "source_alpha": 94,
+      "expected_rgb": [
+        94,
+        92,
+        67
+      ],
+      "actual_rgb": [
+        94,
+        92,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 334,
+      "y": 184,
+      "source_alpha": 95,
+      "expected_rgb": [
+        95,
+        92,
+        67
+      ],
+      "actual_rgb": [
+        95,
+        92,
+        67
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 337,
+      "y": 184,
+      "source_alpha": 96,
+      "expected_rgb": [
+        95,
+        93,
+        68
+      ],
+      "actual_rgb": [
+        95,
+        93,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 340,
+      "y": 184,
+      "source_alpha": 97,
+      "expected_rgb": [
+        96,
+        93,
+        68
+      ],
+      "actual_rgb": [
+        96,
+        93,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 343,
+      "y": 184,
+      "source_alpha": 98,
+      "expected_rgb": [
+        97,
+        94,
+        68
+      ],
+      "actual_rgb": [
+        97,
+        94,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 346,
+      "y": 184,
+      "source_alpha": 99,
+      "expected_rgb": [
+        98,
+        94,
+        68
+      ],
+      "actual_rgb": [
+        98,
+        94,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 349,
+      "y": 184,
+      "source_alpha": 100,
+      "expected_rgb": [
+        98,
+        95,
+        68
+      ],
+      "actual_rgb": [
+        98,
+        95,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 352,
+      "y": 184,
+      "source_alpha": 101,
+      "expected_rgb": [
+        99,
+        95,
+        68
+      ],
+      "actual_rgb": [
+        99,
+        95,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 355,
+      "y": 184,
+      "source_alpha": 102,
+      "expected_rgb": [
+        100,
+        96,
+        68
+      ],
+      "actual_rgb": [
+        100,
+        96,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 358,
+      "y": 184,
+      "source_alpha": 103,
+      "expected_rgb": [
+        101,
+        97,
+        68
+      ],
+      "actual_rgb": [
+        101,
+        97,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 361,
+      "y": 184,
+      "source_alpha": 104,
+      "expected_rgb": [
+        102,
+        97,
+        68
+      ],
+      "actual_rgb": [
+        102,
+        97,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 364,
+      "y": 184,
+      "source_alpha": 105,
+      "expected_rgb": [
+        102,
+        98,
+        68
+      ],
+      "actual_rgb": [
+        102,
+        98,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 367,
+      "y": 184,
+      "source_alpha": 106,
+      "expected_rgb": [
+        103,
+        98,
+        68
+      ],
+      "actual_rgb": [
+        103,
+        98,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 370,
+      "y": 184,
+      "source_alpha": 107,
+      "expected_rgb": [
+        104,
+        99,
+        68
+      ],
+      "actual_rgb": [
+        104,
+        99,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 373,
+      "y": 184,
+      "source_alpha": 108,
+      "expected_rgb": [
+        105,
+        99,
+        68
+      ],
+      "actual_rgb": [
+        105,
+        99,
+        68
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 376,
+      "y": 184,
+      "source_alpha": 109,
+      "expected_rgb": [
+        105,
+        100,
+        69
+      ],
+      "actual_rgb": [
+        105,
+        100,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 379,
+      "y": 184,
+      "source_alpha": 110,
+      "expected_rgb": [
+        106,
+        100,
+        69
+      ],
+      "actual_rgb": [
+        106,
+        100,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 382,
+      "y": 184,
+      "source_alpha": 111,
+      "expected_rgb": [
+        107,
+        101,
+        69
+      ],
+      "actual_rgb": [
+        107,
+        101,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 385,
+      "y": 184,
+      "source_alpha": 112,
+      "expected_rgb": [
+        108,
+        101,
+        69
+      ],
+      "actual_rgb": [
+        108,
+        101,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 388,
+      "y": 184,
+      "source_alpha": 113,
+      "expected_rgb": [
+        109,
+        102,
+        69
+      ],
+      "actual_rgb": [
+        109,
+        102,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 391,
+      "y": 184,
+      "source_alpha": 114,
+      "expected_rgb": [
+        109,
+        103,
+        69
+      ],
+      "actual_rgb": [
+        109,
+        103,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 394,
+      "y": 184,
+      "source_alpha": 115,
+      "expected_rgb": [
+        110,
+        103,
+        69
+      ],
+      "actual_rgb": [
+        110,
+        103,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 397,
+      "y": 184,
+      "source_alpha": 116,
+      "expected_rgb": [
+        111,
+        104,
+        69
+      ],
+      "actual_rgb": [
+        111,
+        104,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 400,
+      "y": 184,
+      "source_alpha": 117,
+      "expected_rgb": [
+        112,
+        104,
+        69
+      ],
+      "actual_rgb": [
+        112,
+        104,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 403,
+      "y": 184,
+      "source_alpha": 118,
+      "expected_rgb": [
+        113,
+        105,
+        69
+      ],
+      "actual_rgb": [
+        113,
+        105,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 406,
+      "y": 184,
+      "source_alpha": 119,
+      "expected_rgb": [
+        113,
+        105,
+        69
+      ],
+      "actual_rgb": [
+        113,
+        105,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 409,
+      "y": 184,
+      "source_alpha": 120,
+      "expected_rgb": [
+        114,
+        106,
+        69
+      ],
+      "actual_rgb": [
+        114,
+        106,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 412,
+      "y": 184,
+      "source_alpha": 121,
+      "expected_rgb": [
+        115,
+        106,
+        69
+      ],
+      "actual_rgb": [
+        115,
+        106,
+        69
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 415,
+      "y": 184,
+      "source_alpha": 122,
+      "expected_rgb": [
+        116,
+        107,
+        70
+      ],
+      "actual_rgb": [
+        116,
+        107,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 418,
+      "y": 184,
+      "source_alpha": 123,
+      "expected_rgb": [
+        116,
+        108,
+        70
+      ],
+      "actual_rgb": [
+        116,
+        108,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 421,
+      "y": 184,
+      "source_alpha": 124,
+      "expected_rgb": [
+        117,
+        108,
+        70
+      ],
+      "actual_rgb": [
+        117,
+        108,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 424,
+      "y": 184,
+      "source_alpha": 125,
+      "expected_rgb": [
+        118,
+        109,
+        70
+      ],
+      "actual_rgb": [
+        118,
+        109,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 427,
+      "y": 184,
+      "source_alpha": 126,
+      "expected_rgb": [
+        119,
+        109,
+        70
+      ],
+      "actual_rgb": [
+        119,
+        109,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 430,
+      "y": 184,
+      "source_alpha": 127,
+      "expected_rgb": [
+        120,
+        110,
+        70
+      ],
+      "actual_rgb": [
+        120,
+        110,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 433,
+      "y": 184,
+      "source_alpha": 128,
+      "expected_rgb": [
+        120,
+        110,
+        70
+      ],
+      "actual_rgb": [
+        120,
+        110,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 436,
+      "y": 184,
+      "source_alpha": 129,
+      "expected_rgb": [
+        121,
+        111,
+        70
+      ],
+      "actual_rgb": [
+        121,
+        111,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 439,
+      "y": 184,
+      "source_alpha": 130,
+      "expected_rgb": [
+        122,
+        111,
+        70
+      ],
+      "actual_rgb": [
+        122,
+        111,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 442,
+      "y": 184,
+      "source_alpha": 131,
+      "expected_rgb": [
+        123,
+        112,
+        70
+      ],
+      "actual_rgb": [
+        123,
+        112,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 445,
+      "y": 184,
+      "source_alpha": 132,
+      "expected_rgb": [
+        124,
+        112,
+        70
+      ],
+      "actual_rgb": [
+        124,
+        112,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 448,
+      "y": 184,
+      "source_alpha": 133,
+      "expected_rgb": [
+        124,
+        113,
+        70
+      ],
+      "actual_rgb": [
+        124,
+        113,
+        70
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 451,
+      "y": 184,
+      "source_alpha": 134,
+      "expected_rgb": [
+        125,
+        114,
+        71
+      ],
+      "actual_rgb": [
+        125,
+        114,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 454,
+      "y": 184,
+      "source_alpha": 135,
+      "expected_rgb": [
+        126,
+        114,
+        71
+      ],
+      "actual_rgb": [
+        126,
+        114,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 457,
+      "y": 184,
+      "source_alpha": 136,
+      "expected_rgb": [
+        127,
+        115,
+        71
+      ],
+      "actual_rgb": [
+        127,
+        115,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 460,
+      "y": 184,
+      "source_alpha": 137,
+      "expected_rgb": [
+        127,
+        115,
+        71
+      ],
+      "actual_rgb": [
+        127,
+        115,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 463,
+      "y": 184,
+      "source_alpha": 138,
+      "expected_rgb": [
+        128,
+        116,
+        71
+      ],
+      "actual_rgb": [
+        128,
+        116,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 466,
+      "y": 184,
+      "source_alpha": 139,
+      "expected_rgb": [
+        129,
+        116,
+        71
+      ],
+      "actual_rgb": [
+        129,
+        116,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 469,
+      "y": 184,
+      "source_alpha": 140,
+      "expected_rgb": [
+        130,
+        117,
+        71
+      ],
+      "actual_rgb": [
+        130,
+        117,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 472,
+      "y": 184,
+      "source_alpha": 141,
+      "expected_rgb": [
+        131,
+        117,
+        71
+      ],
+      "actual_rgb": [
+        131,
+        117,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 475,
+      "y": 184,
+      "source_alpha": 142,
+      "expected_rgb": [
+        131,
+        118,
+        71
+      ],
+      "actual_rgb": [
+        131,
+        118,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 478,
+      "y": 184,
+      "source_alpha": 143,
+      "expected_rgb": [
+        132,
+        119,
+        71
+      ],
+      "actual_rgb": [
+        132,
+        119,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 481,
+      "y": 184,
+      "source_alpha": 144,
+      "expected_rgb": [
+        133,
+        119,
+        71
+      ],
+      "actual_rgb": [
+        133,
+        119,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 484,
+      "y": 184,
+      "source_alpha": 145,
+      "expected_rgb": [
+        134,
+        120,
+        71
+      ],
+      "actual_rgb": [
+        134,
+        120,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 487,
+      "y": 184,
+      "source_alpha": 146,
+      "expected_rgb": [
+        135,
+        120,
+        71
+      ],
+      "actual_rgb": [
+        135,
+        120,
+        71
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 490,
+      "y": 184,
+      "source_alpha": 147,
+      "expected_rgb": [
+        135,
+        121,
+        72
+      ],
+      "actual_rgb": [
+        135,
+        121,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 493,
+      "y": 184,
+      "source_alpha": 148,
+      "expected_rgb": [
+        136,
+        121,
+        72
+      ],
+      "actual_rgb": [
+        136,
+        121,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 496,
+      "y": 184,
+      "source_alpha": 149,
+      "expected_rgb": [
+        137,
+        122,
+        72
+      ],
+      "actual_rgb": [
+        137,
+        122,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 499,
+      "y": 184,
+      "source_alpha": 150,
+      "expected_rgb": [
+        138,
+        122,
+        72
+      ],
+      "actual_rgb": [
+        138,
+        122,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 502,
+      "y": 184,
+      "source_alpha": 151,
+      "expected_rgb": [
+        138,
+        123,
+        72
+      ],
+      "actual_rgb": [
+        138,
+        123,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 505,
+      "y": 184,
+      "source_alpha": 152,
+      "expected_rgb": [
+        139,
+        123,
+        72
+      ],
+      "actual_rgb": [
+        139,
+        123,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 508,
+      "y": 184,
+      "source_alpha": 153,
+      "expected_rgb": [
+        140,
+        124,
+        72
+      ],
+      "actual_rgb": [
+        140,
+        124,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 511,
+      "y": 184,
+      "source_alpha": 154,
+      "expected_rgb": [
+        141,
+        125,
+        72
+      ],
+      "actual_rgb": [
+        141,
+        125,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 514,
+      "y": 184,
+      "source_alpha": 155,
+      "expected_rgb": [
+        142,
+        125,
+        72
+      ],
+      "actual_rgb": [
+        142,
+        125,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 517,
+      "y": 184,
+      "source_alpha": 156,
+      "expected_rgb": [
+        142,
+        126,
+        72
+      ],
+      "actual_rgb": [
+        142,
+        126,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 520,
+      "y": 184,
+      "source_alpha": 157,
+      "expected_rgb": [
+        143,
+        126,
+        72
+      ],
+      "actual_rgb": [
+        143,
+        126,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 523,
+      "y": 184,
+      "source_alpha": 158,
+      "expected_rgb": [
+        144,
+        127,
+        72
+      ],
+      "actual_rgb": [
+        144,
+        127,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 526,
+      "y": 184,
+      "source_alpha": 159,
+      "expected_rgb": [
+        145,
+        127,
+        72
+      ],
+      "actual_rgb": [
+        145,
+        127,
+        72
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 529,
+      "y": 184,
+      "source_alpha": 160,
+      "expected_rgb": [
+        145,
+        128,
+        73
+      ],
+      "actual_rgb": [
+        145,
+        128,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 532,
+      "y": 184,
+      "source_alpha": 161,
+      "expected_rgb": [
+        146,
+        128,
+        73
+      ],
+      "actual_rgb": [
+        146,
+        128,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 535,
+      "y": 184,
+      "source_alpha": 162,
+      "expected_rgb": [
+        147,
+        129,
+        73
+      ],
+      "actual_rgb": [
+        147,
+        129,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 538,
+      "y": 184,
+      "source_alpha": 163,
+      "expected_rgb": [
+        148,
+        129,
+        73
+      ],
+      "actual_rgb": [
+        148,
+        129,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 541,
+      "y": 184,
+      "source_alpha": 164,
+      "expected_rgb": [
+        149,
+        130,
+        73
+      ],
+      "actual_rgb": [
+        149,
+        130,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 544,
+      "y": 184,
+      "source_alpha": 165,
+      "expected_rgb": [
+        149,
+        131,
+        73
+      ],
+      "actual_rgb": [
+        149,
+        131,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 547,
+      "y": 184,
+      "source_alpha": 166,
+      "expected_rgb": [
+        150,
+        131,
+        73
+      ],
+      "actual_rgb": [
+        150,
+        131,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 550,
+      "y": 184,
+      "source_alpha": 167,
+      "expected_rgb": [
+        151,
+        132,
+        73
+      ],
+      "actual_rgb": [
+        151,
+        132,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 553,
+      "y": 184,
+      "source_alpha": 168,
+      "expected_rgb": [
+        152,
+        132,
+        73
+      ],
+      "actual_rgb": [
+        152,
+        132,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 556,
+      "y": 184,
+      "source_alpha": 169,
+      "expected_rgb": [
+        153,
+        133,
+        73
+      ],
+      "actual_rgb": [
+        153,
+        133,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 559,
+      "y": 184,
+      "source_alpha": 170,
+      "expected_rgb": [
+        153,
+        133,
+        73
+      ],
+      "actual_rgb": [
+        153,
+        133,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 562,
+      "y": 184,
+      "source_alpha": 171,
+      "expected_rgb": [
+        154,
+        134,
+        73
+      ],
+      "actual_rgb": [
+        154,
+        134,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 565,
+      "y": 184,
+      "source_alpha": 172,
+      "expected_rgb": [
+        155,
+        134,
+        73
+      ],
+      "actual_rgb": [
+        155,
+        134,
+        73
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 568,
+      "y": 184,
+      "source_alpha": 173,
+      "expected_rgb": [
+        156,
+        135,
+        74
+      ],
+      "actual_rgb": [
+        156,
+        135,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 571,
+      "y": 184,
+      "source_alpha": 174,
+      "expected_rgb": [
+        156,
+        136,
+        74
+      ],
+      "actual_rgb": [
+        156,
+        136,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 574,
+      "y": 184,
+      "source_alpha": 175,
+      "expected_rgb": [
+        157,
+        136,
+        74
+      ],
+      "actual_rgb": [
+        157,
+        136,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 577,
+      "y": 184,
+      "source_alpha": 176,
+      "expected_rgb": [
+        158,
+        137,
+        74
+      ],
+      "actual_rgb": [
+        158,
+        137,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 580,
+      "y": 184,
+      "source_alpha": 177,
+      "expected_rgb": [
+        159,
+        137,
+        74
+      ],
+      "actual_rgb": [
+        159,
+        137,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 583,
+      "y": 184,
+      "source_alpha": 178,
+      "expected_rgb": [
+        160,
+        138,
+        74
+      ],
+      "actual_rgb": [
+        160,
+        138,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 586,
+      "y": 184,
+      "source_alpha": 179,
+      "expected_rgb": [
+        160,
+        138,
+        74
+      ],
+      "actual_rgb": [
+        160,
+        138,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 589,
+      "y": 184,
+      "source_alpha": 180,
+      "expected_rgb": [
+        161,
+        139,
+        74
+      ],
+      "actual_rgb": [
+        161,
+        139,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 592,
+      "y": 184,
+      "source_alpha": 181,
+      "expected_rgb": [
+        162,
+        139,
+        74
+      ],
+      "actual_rgb": [
+        162,
+        139,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 595,
+      "y": 184,
+      "source_alpha": 182,
+      "expected_rgb": [
+        163,
+        140,
+        74
+      ],
+      "actual_rgb": [
+        163,
+        140,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 598,
+      "y": 184,
+      "source_alpha": 183,
+      "expected_rgb": [
+        164,
+        140,
+        74
+      ],
+      "actual_rgb": [
+        164,
+        140,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 601,
+      "y": 184,
+      "source_alpha": 184,
+      "expected_rgb": [
+        164,
+        141,
+        74
+      ],
+      "actual_rgb": [
+        164,
+        141,
+        74
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 604,
+      "y": 184,
+      "source_alpha": 185,
+      "expected_rgb": [
+        165,
+        142,
+        75
+      ],
+      "actual_rgb": [
+        165,
+        142,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 607,
+      "y": 184,
+      "source_alpha": 186,
+      "expected_rgb": [
+        166,
+        142,
+        75
+      ],
+      "actual_rgb": [
+        166,
+        142,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 610,
+      "y": 184,
+      "source_alpha": 187,
+      "expected_rgb": [
+        167,
+        143,
+        75
+      ],
+      "actual_rgb": [
+        167,
+        143,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 613,
+      "y": 184,
+      "source_alpha": 188,
+      "expected_rgb": [
+        167,
+        143,
+        75
+      ],
+      "actual_rgb": [
+        167,
+        143,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 616,
+      "y": 184,
+      "source_alpha": 189,
+      "expected_rgb": [
+        168,
+        144,
+        75
+      ],
+      "actual_rgb": [
+        168,
+        144,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 619,
+      "y": 184,
+      "source_alpha": 190,
+      "expected_rgb": [
+        169,
+        144,
+        75
+      ],
+      "actual_rgb": [
+        169,
+        144,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 622,
+      "y": 184,
+      "source_alpha": 191,
+      "expected_rgb": [
+        170,
+        145,
+        75
+      ],
+      "actual_rgb": [
+        170,
+        145,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 625,
+      "y": 184,
+      "source_alpha": 192,
+      "expected_rgb": [
+        171,
+        145,
+        75
+      ],
+      "actual_rgb": [
+        171,
+        145,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 628,
+      "y": 184,
+      "source_alpha": 193,
+      "expected_rgb": [
+        171,
+        146,
+        75
+      ],
+      "actual_rgb": [
+        171,
+        146,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 631,
+      "y": 184,
+      "source_alpha": 194,
+      "expected_rgb": [
+        172,
+        147,
+        75
+      ],
+      "actual_rgb": [
+        172,
+        147,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 634,
+      "y": 184,
+      "source_alpha": 195,
+      "expected_rgb": [
+        173,
+        147,
+        75
+      ],
+      "actual_rgb": [
+        173,
+        147,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 637,
+      "y": 184,
+      "source_alpha": 196,
+      "expected_rgb": [
+        174,
+        148,
+        75
+      ],
+      "actual_rgb": [
+        174,
+        148,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 640,
+      "y": 184,
+      "source_alpha": 197,
+      "expected_rgb": [
+        175,
+        148,
+        75
+      ],
+      "actual_rgb": [
+        175,
+        148,
+        75
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 643,
+      "y": 184,
+      "source_alpha": 198,
+      "expected_rgb": [
+        175,
+        149,
+        76
+      ],
+      "actual_rgb": [
+        175,
+        149,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 646,
+      "y": 184,
+      "source_alpha": 199,
+      "expected_rgb": [
+        176,
+        149,
+        76
+      ],
+      "actual_rgb": [
+        176,
+        149,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 649,
+      "y": 184,
+      "source_alpha": 200,
+      "expected_rgb": [
+        177,
+        150,
+        76
+      ],
+      "actual_rgb": [
+        177,
+        150,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 652,
+      "y": 184,
+      "source_alpha": 201,
+      "expected_rgb": [
+        178,
+        150,
+        76
+      ],
+      "actual_rgb": [
+        178,
+        150,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 655,
+      "y": 184,
+      "source_alpha": 202,
+      "expected_rgb": [
+        178,
+        151,
+        76
+      ],
+      "actual_rgb": [
+        178,
+        151,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 658,
+      "y": 184,
+      "source_alpha": 203,
+      "expected_rgb": [
+        179,
+        151,
+        76
+      ],
+      "actual_rgb": [
+        179,
+        151,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 661,
+      "y": 184,
+      "source_alpha": 204,
+      "expected_rgb": [
+        180,
+        152,
+        76
+      ],
+      "actual_rgb": [
+        180,
+        152,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 664,
+      "y": 184,
+      "source_alpha": 205,
+      "expected_rgb": [
+        181,
+        153,
+        76
+      ],
+      "actual_rgb": [
+        181,
+        153,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 667,
+      "y": 184,
+      "source_alpha": 206,
+      "expected_rgb": [
+        182,
+        153,
+        76
+      ],
+      "actual_rgb": [
+        182,
+        153,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 670,
+      "y": 184,
+      "source_alpha": 207,
+      "expected_rgb": [
+        182,
+        154,
+        76
+      ],
+      "actual_rgb": [
+        182,
+        154,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 673,
+      "y": 184,
+      "source_alpha": 208,
+      "expected_rgb": [
+        183,
+        154,
+        76
+      ],
+      "actual_rgb": [
+        183,
+        154,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 676,
+      "y": 184,
+      "source_alpha": 209,
+      "expected_rgb": [
+        184,
+        155,
+        76
+      ],
+      "actual_rgb": [
+        184,
+        155,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 679,
+      "y": 184,
+      "source_alpha": 210,
+      "expected_rgb": [
+        185,
+        155,
+        76
+      ],
+      "actual_rgb": [
+        185,
+        155,
+        76
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 682,
+      "y": 184,
+      "source_alpha": 211,
+      "expected_rgb": [
+        185,
+        156,
+        77
+      ],
+      "actual_rgb": [
+        185,
+        156,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 685,
+      "y": 184,
+      "source_alpha": 212,
+      "expected_rgb": [
+        186,
+        156,
+        77
+      ],
+      "actual_rgb": [
+        186,
+        156,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 688,
+      "y": 184,
+      "source_alpha": 213,
+      "expected_rgb": [
+        187,
+        157,
+        77
+      ],
+      "actual_rgb": [
+        187,
+        157,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 691,
+      "y": 184,
+      "source_alpha": 214,
+      "expected_rgb": [
+        188,
+        157,
+        77
+      ],
+      "actual_rgb": [
+        188,
+        157,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 694,
+      "y": 184,
+      "source_alpha": 215,
+      "expected_rgb": [
+        189,
+        158,
+        77
+      ],
+      "actual_rgb": [
+        189,
+        158,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 697,
+      "y": 184,
+      "source_alpha": 216,
+      "expected_rgb": [
+        189,
+        159,
+        77
+      ],
+      "actual_rgb": [
+        189,
+        159,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 700,
+      "y": 184,
+      "source_alpha": 217,
+      "expected_rgb": [
+        190,
+        159,
+        77
+      ],
+      "actual_rgb": [
+        190,
+        159,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 703,
+      "y": 184,
+      "source_alpha": 218,
+      "expected_rgb": [
+        191,
+        160,
+        77
+      ],
+      "actual_rgb": [
+        191,
+        160,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 706,
+      "y": 184,
+      "source_alpha": 219,
+      "expected_rgb": [
+        192,
+        160,
+        77
+      ],
+      "actual_rgb": [
+        192,
+        160,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 709,
+      "y": 184,
+      "source_alpha": 220,
+      "expected_rgb": [
+        193,
+        161,
+        77
+      ],
+      "actual_rgb": [
+        193,
+        161,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 712,
+      "y": 184,
+      "source_alpha": 221,
+      "expected_rgb": [
+        193,
+        161,
+        77
+      ],
+      "actual_rgb": [
+        193,
+        161,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 715,
+      "y": 184,
+      "source_alpha": 222,
+      "expected_rgb": [
+        194,
+        162,
+        77
+      ],
+      "actual_rgb": [
+        194,
+        162,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 718,
+      "y": 184,
+      "source_alpha": 223,
+      "expected_rgb": [
+        195,
+        162,
+        77
+      ],
+      "actual_rgb": [
+        195,
+        162,
+        77
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 721,
+      "y": 184,
+      "source_alpha": 224,
+      "expected_rgb": [
+        196,
+        163,
+        78
+      ],
+      "actual_rgb": [
+        196,
+        163,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 724,
+      "y": 184,
+      "source_alpha": 225,
+      "expected_rgb": [
+        196,
+        164,
+        78
+      ],
+      "actual_rgb": [
+        196,
+        164,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 727,
+      "y": 184,
+      "source_alpha": 226,
+      "expected_rgb": [
+        197,
+        164,
+        78
+      ],
+      "actual_rgb": [
+        197,
+        164,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 730,
+      "y": 184,
+      "source_alpha": 227,
+      "expected_rgb": [
+        198,
+        165,
+        78
+      ],
+      "actual_rgb": [
+        198,
+        165,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 733,
+      "y": 184,
+      "source_alpha": 228,
+      "expected_rgb": [
+        199,
+        165,
+        78
+      ],
+      "actual_rgb": [
+        199,
+        165,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 736,
+      "y": 184,
+      "source_alpha": 229,
+      "expected_rgb": [
+        200,
+        166,
+        78
+      ],
+      "actual_rgb": [
+        200,
+        166,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 739,
+      "y": 184,
+      "source_alpha": 230,
+      "expected_rgb": [
+        200,
+        166,
+        78
+      ],
+      "actual_rgb": [
+        200,
+        166,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 742,
+      "y": 184,
+      "source_alpha": 231,
+      "expected_rgb": [
+        201,
+        167,
+        78
+      ],
+      "actual_rgb": [
+        201,
+        167,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 745,
+      "y": 184,
+      "source_alpha": 232,
+      "expected_rgb": [
+        202,
+        167,
+        78
+      ],
+      "actual_rgb": [
+        202,
+        167,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 748,
+      "y": 184,
+      "source_alpha": 233,
+      "expected_rgb": [
+        203,
+        168,
+        78
+      ],
+      "actual_rgb": [
+        203,
+        168,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 751,
+      "y": 184,
+      "source_alpha": 234,
+      "expected_rgb": [
+        204,
+        168,
+        78
+      ],
+      "actual_rgb": [
+        204,
+        168,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 754,
+      "y": 184,
+      "source_alpha": 235,
+      "expected_rgb": [
+        204,
+        169,
+        78
+      ],
+      "actual_rgb": [
+        204,
+        169,
+        78
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 757,
+      "y": 184,
+      "source_alpha": 236,
+      "expected_rgb": [
+        205,
+        170,
+        79
+      ],
+      "actual_rgb": [
+        205,
+        170,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 760,
+      "y": 184,
+      "source_alpha": 237,
+      "expected_rgb": [
+        206,
+        170,
+        79
+      ],
+      "actual_rgb": [
+        206,
+        170,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 763,
+      "y": 184,
+      "source_alpha": 238,
+      "expected_rgb": [
+        207,
+        171,
+        79
+      ],
+      "actual_rgb": [
+        207,
+        171,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 766,
+      "y": 184,
+      "source_alpha": 239,
+      "expected_rgb": [
+        207,
+        171,
+        79
+      ],
+      "actual_rgb": [
+        207,
+        171,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 769,
+      "y": 184,
+      "source_alpha": 240,
+      "expected_rgb": [
+        208,
+        172,
+        79
+      ],
+      "actual_rgb": [
+        208,
+        172,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 772,
+      "y": 184,
+      "source_alpha": 241,
+      "expected_rgb": [
+        209,
+        172,
+        79
+      ],
+      "actual_rgb": [
+        209,
+        172,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 775,
+      "y": 184,
+      "source_alpha": 242,
+      "expected_rgb": [
+        210,
+        173,
+        79
+      ],
+      "actual_rgb": [
+        210,
+        173,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 778,
+      "y": 184,
+      "source_alpha": 243,
+      "expected_rgb": [
+        211,
+        173,
+        79
+      ],
+      "actual_rgb": [
+        211,
+        173,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 781,
+      "y": 184,
+      "source_alpha": 244,
+      "expected_rgb": [
+        211,
+        174,
+        79
+      ],
+      "actual_rgb": [
+        211,
+        174,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 784,
+      "y": 184,
+      "source_alpha": 245,
+      "expected_rgb": [
+        212,
+        175,
+        79
+      ],
+      "actual_rgb": [
+        212,
+        175,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 787,
+      "y": 184,
+      "source_alpha": 246,
+      "expected_rgb": [
+        213,
+        175,
+        79
+      ],
+      "actual_rgb": [
+        213,
+        175,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 790,
+      "y": 184,
+      "source_alpha": 247,
+      "expected_rgb": [
+        214,
+        176,
+        79
+      ],
+      "actual_rgb": [
+        214,
+        176,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 793,
+      "y": 184,
+      "source_alpha": 248,
+      "expected_rgb": [
+        215,
+        176,
+        79
+      ],
+      "actual_rgb": [
+        215,
+        176,
+        79
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 796,
+      "y": 184,
+      "source_alpha": 249,
+      "expected_rgb": [
+        215,
+        177,
+        80
+      ],
+      "actual_rgb": [
+        215,
+        177,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 799,
+      "y": 184,
+      "source_alpha": 250,
+      "expected_rgb": [
+        216,
+        177,
+        80
+      ],
+      "actual_rgb": [
+        216,
+        177,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 802,
+      "y": 184,
+      "source_alpha": 251,
+      "expected_rgb": [
+        217,
+        178,
+        80
+      ],
+      "actual_rgb": [
+        217,
+        178,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 805,
+      "y": 184,
+      "source_alpha": 252,
+      "expected_rgb": [
+        218,
+        178,
+        80
+      ],
+      "actual_rgb": [
+        218,
+        178,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 808,
+      "y": 184,
+      "source_alpha": 253,
+      "expected_rgb": [
+        218,
+        179,
+        80
+      ],
+      "actual_rgb": [
+        218,
+        179,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 811,
+      "y": 184,
+      "source_alpha": 254,
+      "expected_rgb": [
+        219,
+        179,
+        80
+      ],
+      "actual_rgb": [
+        219,
+        179,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    },
+    {
+      "x": 814,
+      "y": 184,
+      "source_alpha": 255,
+      "expected_rgb": [
+        220,
+        180,
+        80
+      ],
+      "actual_rgb": [
+        220,
+        180,
+        80
+      ],
+      "absolute_error": [
+        0,
+        0,
+        0
+      ],
+      "pass": true
+    }
+  ]
+}

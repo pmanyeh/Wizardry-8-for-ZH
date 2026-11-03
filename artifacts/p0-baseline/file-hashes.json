@@ -1,0 +1,14 @@
+﻿[
+    {
+        "Path":  "C:\\dev\\wiz8-ws\\build\\zhtw\\p0-baseline\\version.dll",
+        "Hash":  "7D30A50684BF0FF1AF3170920C0B9F633BDFA3550ECE2D2B7A22342BC4BFB84C"
+    },
+    {
+        "Path":  "C:\\dev\\wiz8-ws\\build\\zhtw\\p0-baseline\\wiz8hy.dll",
+        "Hash":  "30191F29A1AAB4DF0137C578D3EFE9CEC3600D94095D8BF6E6967F1717ABED08"
+    },
+    {
+        "Path":  "C:\\dev\\wiz8-ws\\build\\zhtw\\p0-baseline\\wiz8hy_hooks.txt",
+        "Hash":  "8E8D0CEB6FA6405E432F739DCB4C6E6CCB8B0605E4579F3FAB107ACA0EA0B4AB"
+    }
+]

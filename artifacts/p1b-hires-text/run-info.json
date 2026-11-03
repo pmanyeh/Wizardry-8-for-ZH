@@ -1,0 +1,9 @@
+﻿{
+    "phase":  "text",
+    "process_id":  67512,
+    "game_directory":  "D:\\git\\Wizardry 8 for zh\\local\\wiz8-ws\\games\\work",
+    "capture_directory":  "D:\\git\\Wizardry 8 for zh\\artifacts\\p1b-hires-text",
+    "source_revision":  "ca63d4447a973815670fbf6e146110e5d46989f5",
+    "hybrid_sha256":  "3D10918870F1E4C54110CA5627B25165C28A365B0483E57C9705737F7450714D",
+    "hooks_sha256":  "DE5DBB87684A718FD8B7837C47FF456DF7E5A657643C90252812B5EC00AC77CD"
+}

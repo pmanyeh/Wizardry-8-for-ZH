@@ -1,0 +1,28 @@
+diff --git a/decomp b/decomp
+--- a/decomp
++++ b/decomp
+@@ -1 +1 @@
+-Subproject commit ca63d4447a973815670fbf6e146110e5d46989f5
++Subproject commit ca63d4447a973815670fbf6e146110e5d46989f5-dirty
+diff --git a/scripts/hybrid/transplant_wide.json b/scripts/hybrid/transplant_wide.json
+index a1fded0..5a079a7 100644
+--- a/scripts/hybrid/transplant_wide.json
++++ b/scripts/hybrid/transplant_wide.json
+@@ -1,7 +1,9 @@
+ {
+  "comment": "Hybrid, wide UI: functions with port mods (classification.json) + dependencies + users of enlarged arrays.",
+  "units": [
+-  "src/wiz8/engine_code/Canvas.cpp"
++  "src/wiz8/engine_code/Canvas.cpp",
++  "src/wiz8/zh_text/HiResTextLayer.cpp",
++  "src/wiz8/zh_text/HiResTextRasterizerGDI.cpp"
+  ],
+  "auto_units": true,
+  "dll_owned_globals": {
+@@ -303,4 +305,4 @@
+   "src/hybrid/hybrid_main.cpp"
+  ],
+  "exclude_comment": "0x005dc890: the port annotation is on ReportZoneOverlay, but at this address the original has W8DialogBase::Draw"
+-}
+\ No newline at end of file
++}

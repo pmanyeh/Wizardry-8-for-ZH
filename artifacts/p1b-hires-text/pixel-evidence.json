@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "font_name": "微軟正黑體",
+  "runs": [
+    {
+      "x": 48,
+      "y": 40,
+      "font_px": 24,
+      "width": 68,
+      "cell_height": 30,
+      "ascent": 24,
+      "descent": 6,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 191
+    },
+    {
+      "x": 48,
+      "y": 76,
+      "font_px": 24,
+      "width": 264,
+      "cell_height": 30,
+      "ascent": 24,
+      "descent": 6,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 628
+    },
+    {
+      "x": 48,
+      "y": 112,
+      "font_px": 24,
+      "width": 206,
+      "cell_height": 30,
+      "ascent": 24,
+      "descent": 6,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 536
+    },
+    {
+      "x": 48,
+      "y": 174,
+      "font_px": 32,
+      "width": 91,
+      "cell_height": 40,
+      "ascent": 32,
+      "descent": 8,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 270
+    },
+    {
+      "x": 48,
+      "y": 218,
+      "font_px": 32,
+      "width": 352,
+      "cell_height": 40,
+      "ascent": 32,
+      "descent": 8,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 916
+    },
+    {
+      "x": 48,
+      "y": 262,
+      "font_px": 32,
+      "width": 278,
+      "cell_height": 40,
+      "ascent": 32,
+      "descent": 8,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 716
+    },
+    {
+      "x": 48,
+      "y": 350,
+      "font_px": 48,
+      "width": 136,
+      "cell_height": 61,
+      "ascent": 48,
+      "descent": 13,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 396
+    },
+    {
+      "x": 48,
+      "y": 414,
+      "font_px": 48,
+      "width": 528,
+      "cell_height": 61,
+      "ascent": 48,
+      "descent": 13,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 1378
+    },
+    {
+      "x": 48,
+      "y": 478,
+      "font_px": 48,
+      "width": 414,
+      "cell_height": 61,
+      "ascent": 48,
+      "descent": 13,
+      "missing_glyphs": 0,
+      "intermediate_pixels": 1106
+    }
+  ],
+  "nontransparent_pixels": 21661,
+  "intermediate_alpha_pixels": 6137,
+  "coverage_levels": [
+    0,
+    104,
+    124,
+    140,
+    154,
+    167,
+    178,
+    189,
+    199,
+    208,
+    217,
+    225,
+    233,
+    240,
+    248,
+    255
+  ],
+  "crop_1x_box": [
+    40,
+    342,
+    650,
+    478
+  ],
+  "native_composite_max_rgb_error": [
+    0,
+    0,
+    0
+  ],
+  "native_composite_error_limit": 2,
+  "pixels_over_error_limit": 0,
+  "feature_off_overlay_allocated": false,
+  "proof": "Physical-resolution GDI output is compared pixel-for-pixel with the final frame using an independent feature-off background. No intermediate 640x480 raster or resampling is used."
+}

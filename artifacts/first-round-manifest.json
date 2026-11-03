@@ -1,0 +1,418 @@
+{
+    "plan":  "WIZARDRY8_ZHTW_MASTER_PLAN_v2.2.md",
+    "phases":  [
+                   "P-1 PASS",
+                   "P0-A PASS",
+                   "P0-B PASS",
+                   "P1A PASS",
+                   "P1B PASS"
+               ],
+    "stopped_before":  "P2A",
+    "files":  [
+                  {
+                      "path":  ".gitattributes",
+                      "bytes":  89,
+                      "sha256":  "0ee5c74702805ba067700ee12240eb08057b02a90cf5b675f62d29e944626528"
+                  },
+                  {
+                      "path":  ".gitignore",
+                      "bytes":  68,
+                      "sha256":  "2ddec6959d1c496c59036af8e5abe6466d212f4d179ad8393ff71def53b6b800"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/baseline-1920x1080.png",
+                      "bytes":  2318196,
+                      "sha256":  "83381db591053dd221f76920cdc7f39fde080df407387f54cd1a91bed75a8716"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/baseline-hybrid-build.log",
+                      "bytes":  3626,
+                      "sha256":  "8ef40cf1a5d25c9ec567bb1ca8c084cad066ffa63eb53ab054d14f1aa3a03309"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/baseline-native-1920x1080.jpg",
+                      "bytes":  1052250,
+                      "sha256":  "81eeee0f81f688951b523a6423ee6f3714081c290f17da12a4d1b2aff09066e6"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/baseline-port-build.log",
+                      "bytes":  73502,
+                      "sha256":  "98fea82bef1812b078ca9521d7cc244d031a6b572cef2244200356f19ff346fd"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/baseline-window.jpg",
+                      "bytes":  148423,
+                      "sha256":  "f138dc9d61c25442e5912d1d24b9891b47afcc8bc9a3360f650cefd5390d88c4"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/file-hashes.json",
+                      "bytes":  543,
+                      "sha256":  "d3ae7a358d4684cf994b00ecdfbaaff8e8c91ae48e44793ec9b67e8d054c932b"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/filename-tests.log",
+                      "bytes":  8448,
+                      "sha256":  "7089507e746e96eea7da8e613b5b9eccf910d6850c9de2f5a3c05d3723055a7b"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/loader-build.log",
+                      "bytes":  3854,
+                      "sha256":  "a5a6219f59968f7897bb0286724b9f79f2af8c0ffbbdf1293808c27aec0e9d22"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/wiz8hy.log",
+                      "bytes":  18668,
+                      "sha256":  "064450fc4c406c0331249fd0bab4dc18f04bf06b5b16796097f6fad0ad898596"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/wiz8wide.log",
+                      "bytes":  652,
+                      "sha256":  "bb877b068b33faa2ef21dcc2122a65c9554bf06a7a373c54a5e38edcf947df88"
+                  },
+                  {
+                      "path":  "artifacts/p0-baseline/wiz8ws.log",
+                      "bytes":  939,
+                      "sha256":  "1174b676e361a347ea1ddf77bd2901f10401a99ba035464236c0b18747c762ca"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/execution-log.txt",
+                      "bytes":  55,
+                      "sha256":  "7b3240d55ac6b6e7aa820f63d8ff75d2ac363c6e23d65c314e6e4aa732120aa9"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/hybrid-hashes.json",
+                      "bytes":  344,
+                      "sha256":  "82b00ee543932ad7f1266823804b2d1fe70bccf28ea388af83c34f77c2aa97c6"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/probe.patch",
+                      "bytes":  973,
+                      "sha256":  "8e1a86c7d8f25500d391c49cd4428924ec46d953f38eb6f0c0184d66a9b422d0"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/probe-hybrid-build.log",
+                      "bytes":  3626,
+                      "sha256":  "9127514de5403bbc9fe4dc26ad3efd80e6cd733a246b2172268d9ee68ac4c119"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/rollback-hashes.json",
+                      "bytes":  507,
+                      "sha256":  "5f10844d554ed9b7b86a3ba6e9b361cae3e2cea7e41e01bbb486180bb44bb34d"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/rollback-runtime.log",
+                      "bytes":  652,
+                      "sha256":  "bb877b068b33faa2ef21dcc2122a65c9554bf06a7a373c54a5e38edcf947df88"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/wiz8hy.log",
+                      "bytes":  18668,
+                      "sha256":  "616a3413a231a8d82c63de151ba3dd912795ab36a7b5400770908f8c0b23b061"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/wiz8wide.log",
+                      "bytes":  704,
+                      "sha256":  "5099e62dceaec83adcf1d4d0c9be5ba2cd927f8a7811f3f556976693387c9230"
+                  },
+                  {
+                      "path":  "artifacts/p0-transplant-probe/wiz8ws.log",
+                      "bytes":  939,
+                      "sha256":  "149bf88c4d285dfaf8fc5179fb724e8658e130eb8bce1876aa71da33a56d1288"
+                  },
+                  {
+                      "path":  "artifacts/p-1/baseline-inputs.json",
+                      "bytes":  638,
+                      "sha256":  "29ccaadec9e202a064be86088a31ecfe6926874ec6e08f400d8c4bfbb47c369d"
+                  },
+                  {
+                      "path":  "artifacts/p-1/download-results.json",
+                      "bytes":  674,
+                      "sha256":  "34074334c8550d16b4b2ff1abcb78bdd18483b394dce92380608673db4ea58da"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/alpha-pixels.json",
+                      "bytes":  82600,
+                      "sha256":  "aa555708fc08aed0c1b3b1818bd21b86bb2e44d19afc5f65c85693a79944f7ed"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/alpha-pixels.txt",
+                      "bytes":  14741,
+                      "sha256":  "9a5ab0967c3a559ef05e53189bb38dd989f3d86a445f7cbd60d6fd84e026fa40"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/alpha-ramp-1920x1080.png",
+                      "bytes":  1926288,
+                      "sha256":  "ed3452ecf9ed4868202c77fc40eeec1e42b8f27c4762b9e47719fa4a16c6133c"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/alpha-source.png",
+                      "bytes":  8536,
+                      "sha256":  "4b110160713475f8a5ece6f7449c645f374be917f9fbe5f3532e8a17b3f6f451"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/alpha-test-1920x1080.png",
+                      "bytes":  1926288,
+                      "sha256":  "ed3452ecf9ed4868202c77fc40eeec1e42b8f27c4762b9e47719fa4a16c6133c"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/build.log",
+                      "bytes":  3626,
+                      "sha256":  "8822748b0efffabd90d0ea26f4ed1c541b04612fdc2940942ca6154f1260de4f"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/decomp.patch",
+                      "bytes":  13621,
+                      "sha256":  "e296ad58096c49413f104bdfde2da2bbeabe008d102e736c622162b970f1f484"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/hybrid-config.patch",
+                      "bytes":  944,
+                      "sha256":  "c0fdef5c1034b2ebcbec40288bb6b1258210b980762fbc42a664ba5b3ed12a32"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/hybrid-hashes.json",
+                      "bytes":  350,
+                      "sha256":  "05b89193c0ed86cf233863466f26ce75d11a2eb8862bb848ac9dc65eabc97cd0"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/readback.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "fb6a42eb9e18b8450ba6cccd92fe1d38c3d3d04a820434c4a3435e0ab57fd961"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/render-info.txt",
+                      "bytes":  842,
+                      "sha256":  "9ced1d7b61ecd9218bc5566b25291d77d9c683a7d14ff2e7965db7cc30933636"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/run-info.json",
+                      "bytes":  471,
+                      "sha256":  "096b67d85417c628f913d9369f0538dac1fc54b57a92cd0340b8a31a93d38b43"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/runtime.log",
+                      "bytes":  811,
+                      "sha256":  "a5538e8de9b7130bc5930aa48b3a88ee1f2c566c6251874e16038e5f86e2b7bd"
+                  },
+                  {
+                      "path":  "artifacts/p1a-alpha/source.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "27ee102eb331a0d2b7c2a8fc510bb491bf3160c20a87e32c7e090a1b42b0a2c4"
+                  },
+                  {
+                      "path":  "artifacts/p1b-feature-off/readback.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "22860061d7293c93d0ce3964733e38238341f6232ede723a05f7414e34d7104e"
+                  },
+                  {
+                      "path":  "artifacts/p1b-feature-off/render-info.txt",
+                      "bytes":  470,
+                      "sha256":  "27713c87536ae9379bc6853c8bd943276dee1314be28378fc59e7ac18004d8cd"
+                  },
+                  {
+                      "path":  "artifacts/p1b-feature-off/run-info.json",
+                      "bytes":  474,
+                      "sha256":  "828fe02a5bb77b9318c622eb113a93356881f931c0167045ed8b0efad5430412"
+                  },
+                  {
+                      "path":  "artifacts/p1b-feature-off/runtime.log",
+                      "bytes":  753,
+                      "sha256":  "2ff7becad5a37baf7a020bf5bbe4c57220ff62c1e5755d74a54f0495179e229a"
+                  },
+                  {
+                      "path":  "artifacts/p1b-feature-off/screenshot-1920x1080.png",
+                      "bytes":  2056745,
+                      "sha256":  "cba7b88f1e23b39a4806ee3617b97ec051846c5b8e6b89f6cbe156836d54f13f"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/build.log",
+                      "bytes":  3626,
+                      "sha256":  "ce538af4b7f545be85922f9fb1d79eb6ef5192de7a772b92c4bcbd21d50d4e91"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/crop-1x.png",
+                      "bytes":  75665,
+                      "sha256":  "739a1f80c42e7ae7aa19594c3189f082cabe5c91ddd9a138e86fdb874537908f"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/crop-nearest-upscaled.png",
+                      "bytes":  114557,
+                      "sha256":  "72bad11f23ef98054161ba4575549beca81a78549a1bc29e976eef9f7f994760"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/decomp.patch",
+                      "bytes":  21442,
+                      "sha256":  "71b697a48d84ee607d80e6f2194ba753840c8d2f1f48cd6d7b735fb453809ce8"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/hybrid-config.patch",
+                      "bytes":  994,
+                      "sha256":  "348e3c47dbe9bd3ee1d411f92971dc0081b0ef0e95ae317c01638a517f93f60a"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/hybrid-hashes.json",
+                      "bytes":  350,
+                      "sha256":  "8015df3c53e009d6358cd26cf4fe946ce9e49102d2c0d1267397923323f21676"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/menu/readback.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "bd93f0722fefecbdc55de6fdea6cc0aee56b7f4b9e9ef5c88b4a339574b9c761"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/menu/render-info.txt",
+                      "bytes":  1222,
+                      "sha256":  "2eb7b72de885822821a677b4a3eb611e2cdf3b35ede2073e1067f4e286876e94"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/menu/source.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "ca00a280674a296a28aec1cee9107847f36b9a53bb740a2b455d9691a33cf866"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/pixel-evidence.json",
+                      "bytes":  2813,
+                      "sha256":  "0ccb42bb14b89e766f1a9c78f9b9746d509c0b73ce0bc453238cd389ffe8a4d7"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/rasterizer-output.png",
+                      "bytes":  33053,
+                      "sha256":  "1af8527eca87ab284e61075aab459f6fbdc617db51d38b9a7b5859bcfbe09e98"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/readback.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "bd93f0722fefecbdc55de6fdea6cc0aee56b7f4b9e9ef5c88b4a339574b9c761"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/render-info.txt",
+                      "bytes":  1222,
+                      "sha256":  "2eb7b72de885822821a677b4a3eb611e2cdf3b35ede2073e1067f4e286876e94"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/run-info.json",
+                      "bytes":  475,
+                      "sha256":  "3f8d8be8fc3740fa4be4d237c85d3f8b8cea3b6853123f05abd5f511fa0b849b"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/runtime-enabled.log",
+                      "bytes":  1566,
+                      "sha256":  "d718e471ceb535472a881050e1cff5bd09d27338b86d8ff19c379bdcb5d370f6"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/scene/readback.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "b4f12a11093454134c3ed6aa83463851555a1e8e584bdd04ee5ed0df75c9c7be"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/scene/render-info.txt",
+                      "bytes":  1222,
+                      "sha256":  "2eb7b72de885822821a677b4a3eb611e2cdf3b35ede2073e1067f4e286876e94"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/scene/screenshot-1920x1080.png",
+                      "bytes":  2100083,
+                      "sha256":  "0ead6654f031ba9c82c60c7a0bc9cd8f3d4fdb180ccd19bcf6c2f97ecc4518b9"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/scene/source.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "ca00a280674a296a28aec1cee9107847f36b9a53bb740a2b455d9691a33cf866"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/screenshot-1920x1080.png",
+                      "bytes":  2092967,
+                      "sha256":  "acc7b12ca5c2006ec288cb1d6da318c2904ac6521efeca1717c5755589498c41"
+                  },
+                  {
+                      "path":  "artifacts/p1b-hires-text/source.bgra",
+                      "bytes":  8294400,
+                      "sha256":  "ca00a280674a296a28aec1cee9107847f36b9a53bb740a2b455d9691a33cf866"
+                  },
+                  {
+                      "path":  "artifacts/workspace-relocation/build-smoke.log",
+                      "bytes":  680,
+                      "sha256":  "0d2d15f5e3a089e4ef85b5cb82a0abf2a039487f131884fa5dd1a8268c34d5db"
+                  },
+                  {
+                      "path":  "artifacts/workspace-relocation/copy.log",
+                      "bytes":  1117,
+                      "sha256":  "7b96916e64a142ff273dcd5e7a09ee1741e73b31f0caf99624575eb81320c0c1"
+                  },
+                  {
+                      "path":  "artifacts/workspace-relocation/result.json",
+                      "bytes":  1832,
+                      "sha256":  "615ae08906f31a1803e1ba906e27a8b93d7e2401c9a8cc9218027b0559d4ffb0"
+                  },
+                  {
+                      "path":  "artifacts/workspace-relocation/verification.json",
+                      "bytes":  3250181,
+                      "sha256":  "ca6843e30177e063a32ab9411643ff1c7964975befbe5f5cffb59f5848954043"
+                  },
+                  {
+                      "path":  "docs/P0_ENVIRONMENT.md",
+                      "bytes":  4340,
+                      "sha256":  "603809987c6ed3f2da9b60cb5f298a565f45ddcaba00ad697d037feecb5286c1"
+                  },
+                  {
+                      "path":  "docs/P-1_ARCHITECTURE_DECISION.md",
+                      "bytes":  8277,
+                      "sha256":  "1c0387e14709f7114dcd03c7294af9d716c0cde826f24c7bf6b07c7b1c88449a"
+                  },
+                  {
+                      "path":  "docs/P1A_ALPHA_REPORT.md",
+                      "bytes":  3535,
+                      "sha256":  "547636642a984f4e9804cb7a7f6e13682b2eef90c248cf18537e20f113d29ea4"
+                  },
+                  {
+                      "path":  "docs/P1B_HIRES_TEXT_REPORT.md",
+                      "bytes":  7164,
+                      "sha256":  "dff0d7a4db19aeb5cd0c0bd84f89084a141872b48c9a44b0c244a4f6b895394a"
+                  },
+                  {
+                      "path":  "docs/WORKSPACE.md",
+                      "bytes":  2483,
+                      "sha256":  "af7f1840df374ade5f75d60f8bd6f9e1fe6a971ea19cda8e4a00d8db1bc562aa"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  2208,
+                      "sha256":  "74fa5e34e7a4b6eab10ee74af81c3d735a51822da2c9c7cab6fad2dd7f1b4b2f"
+                  },
+                  {
+                      "path":  "scripts/analyze_alpha_capture.py",
+                      "bytes":  4179,
+                      "sha256":  "18211c58f8aba6b75e81b455461a8ae657446014ae47acd1258247d546504ab5"
+                  },
+                  {
+                      "path":  "scripts/analyze_text_capture.py",
+                      "bytes":  3896,
+                      "sha256":  "f2bb6e9a5385b6015893d9175f701656ed8dbf06ee91db6363ddc7e3a6d503fb"
+                  },
+                  {
+                      "path":  "scripts/Enter-Upstream.ps1",
+                      "bytes":  997,
+                      "sha256":  "a1a0c7ba9e329771fdd51e6546926f24f10e8f07d670d29122cbdaa937b2a67c"
+                  },
+                  {
+                      "path":  "scripts/Request-PocCapture.ps1",
+                      "bytes":  283,
+                      "sha256":  "b4da0af82f90bd6c7442cefb200234efa4114b4ff99b81d5df20a3a5b975837e"
+                  },
+                  {
+                      "path":  "scripts/Start-PocRun.ps1",
+                      "bytes":  2513,
+                      "sha256":  "7f363f9424c5c27385e9db4f03ab623c8e7dfb7714d9db2db444b78258c08bf6"
+                  },
+                  {
+                      "path":  "scripts/verify_workspace_copy.py",
+                      "bytes":  2630,
+                      "sha256":  "c2cba73c44fac56df99986a3a0f38acb1bff3e7fda4ca61f974ff015d1e31ea4"
+                  },
+                  {
+                      "path":  "WIZARDRY8_ZHTW_MASTER_PLAN_v2.2.md",
+                      "bytes":  44911,
+                      "sha256":  "e742c5623da266ec0ca165f512249647f8a85b1dd74a7a6c6c19e678fa32fa09"
+                  }
+              ]
+}

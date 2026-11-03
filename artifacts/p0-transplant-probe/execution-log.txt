@@ -1,0 +1,1 @@
+﻿[ZH-TW P0-B] RenderFrame active renderer=1920x1080
